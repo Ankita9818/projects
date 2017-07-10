@@ -1,0 +1,129 @@
+header{
+	background-color: #b2e7ff;
+	font-family: "tahoma";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	border-bottom:2px solid #0ab1ff;
+	padding: 40px 0;
+	position: fixed;
+ 	right: 0;
+ 	top: 0;
+  left: 0;
+
+}
+
+body{
+	background-color:#ededed;
+	padding:20px;
+	color:black;
+	
+}
+
+.content{
+	position: fixed;
+	top:140px;
+	left:290px;
+	vertical-align: center;
+	width:75%;
+	float: left;
+	padding:20px;
+	overflow: auto;
+}
+
+footer{
+	background-color: #3cff78;
+	font-family: "tahoma";
+	font-size: 24px;
+	color: black;
+	text-align: center;
+	border-bottom:2px solid #0ab1ff;
+	padding: 40px 0;	
+	position: fixed;
+  right: 0;
+ 	bottom: 0;
+ 	left: 0;
+}
+/* I will think about it later */
+body h1
+{
+	
+	font:24px tahoma;
+	color:black;
+}
+
+.sidebar{
+	background-color: #0ab1ff;
+	padding:25px 10px;
+	width:250px;
+	height: 100%;
+	position: fixed;
+  bottom: 0;
+  left: 0;
+  top:123px;
+  margin:0px;
+  
+  
+}
+.cont1{
+	font: 18px Tahoma;
+	color: black;
+	 
+}
+ul
+{
+	color:white; 
+}
+ul li
+{
+	padding:8px;
+}
+a{
+	font:14px Tahoma;
+	color:white;
+	text-decoration:none;
+}
+
+p#id1{
+	font:12px Tahoma;
+	color:black;
+}
+
+p#id2{
+	float: left;
+	position: relative;
+	font:14px Tahoma;
+	color:#802525;
+}
+
+.capss{
+	color:blue;
+	font:12px tahoma;
+	
+	padding: 10px;
+	
+
+}
+header.capss{
+	color:blue;
+	font:12px tahoma;
+	
+	padding: 0px;
+	
+
+}
+.upperbox{
+	border: 1px solid red;
+	background-color: lightpink;
+	color:black;
+	position: fixed;
+	bottom:250px;
+	margin-right: 10px;
+}
+.containerr{
+	position: relative:
+	top:0
+	bottom:0
+	right:0
+	left:0;
+}
