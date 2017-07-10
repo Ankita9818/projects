@@ -3,10 +3,19 @@ header{
 	padding: 5px;
 }
 
-#toptext{
+.toptext{
 	font:13px tahoma;
 	color:black;
 	
+}
+a{
+	font:13px tahoma;
+	color:#045198;
+	text-decoration: none;
+}
+#i2{
+	font:13px tahoma;
+	color:#045198;
 }
 .topcont{
 	position: absolute;
@@ -33,7 +42,7 @@ h1{
 	width: 500px;
 	padding: 20px 30px;
 }
-input[type=text],input[type=email],input[type=password]{
+.inputs{
 	width:360px;
 	height:25px;
 	background-color: white;
@@ -42,18 +51,15 @@ input[type=text],input[type=email],input[type=password]{
 	color:#6f6f6f;
 	margin-left: 20px; 
 }
-input[type=date]{
-	width:360px;
-	height:25px;
-	background-color: white;
-	border:1px solid #b9b9b9;
-	font:13px tahoma;
-	color:#6f6f6f;
-	margin-left: 20px; 
-}
+
 .gender{
 	font:13px tahoma;
 	color:#6f6f6f;
+	text-align: left;
+}
+input[type=radio]{
+	margin-left: 20px;
+	margin-top: 10px;
 }
 input[type=submit]{
 	width:130px;
@@ -74,7 +80,17 @@ textarea{
 	margin-left: 20px;
 	resize:none;
 }
+
 label{
 	font:14px tahoma;
 	color:black;
+	text-align: right;
+	font-weight: bold;
+}
+.noleft{
+	text-align: right;
+}
+#top{
+	text-align: right;
+	vertical-align: top;
 }

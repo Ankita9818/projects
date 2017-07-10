@@ -3,14 +3,14 @@
 <html>
 <head>
 	<title>CSS forms</title>
-	<link rel="stylesheet" type="text/css" href="exe3.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 	<header>
 		<img src="vinsol-logo.png" alt="Vinsol Corporation">
 		<div class="topcont">
-			<span id="toptext">Email us at:<span style="color:#045198;font:13px Tahoma">sales@vinsol.com</span></span>&nbsp&nbsp
-			<span id="toptext">Skype:<span style="color:#045198;font:13px Tahoma">Vinsol</span></span>
+			<span class="toptext">Email us at:<a href="mailto:sales@vinsol.com?Subject=Hello%20again" target="_top">sales@vinsol.com</a></span>&nbsp&nbsp
+			<span class="toptext">Skype:<span id="i2">Vinsol</span></span>
 		</div>
 	</header>
 	<div class="container">
@@ -19,31 +19,31 @@
 			<form>
 				<table>
 					<tr>
-						<td><label for="firstname">First Name</label></td>
-						<td><input type="text" id="firstname"></td>
+						<td class="noleft"><label for="firstname">First Name</label></td>
+						<td><input type="text" id="firstname" class="inputs"></td>
 					</tr>
 					<tr>
-						<td><label for="lastname">Last Name</label></td>
-						<td><input type="text" id="lastname"></td>
+						<td class="noleft"><label for="lastname">Last Name</label></td>
+						<td><input type="text" id="lastname" class="inputs"></td>
 					</tr>
 					<tr>
-						<td><label for="mail">Email Address</label></td>
-						<td><input type="email" id="mail"></td>
+						<td class="noleft"><label for="mail">Email Address</label></td>
+						<td><input type="email" id="mail" class="inputs"></td>
 					</tr>
 					<tr>
-						<td><label for="pass">Password</label></td>
-						<td><input type="password" id="pass"></td>
+						<td class="noleft"><label for="pass">Password</label></td>
+						<td><input type="password" id="pass" class="inputs"></td>
 					</tr>
 					<tr>
-						<td><label for="gender">Gender</label></td>
-						<td><input type="radio" id="gender" name="gen" value="male" style="margin-left: 20px ;margin-top:10px" checked><span class="gender">Male<input type="radio" id="gender" name="gen" value="female" style="margin-left: 20px">Female</span></td>
+						<td class="noleft"><label for="male">Gender</label></td>
+						<td><input type="radio" id="male" name="gen" value="male" checked><label for="male" class="gender">Male</label><input type="radio" id="female" name="gen" value="female"><label for="female" class="gender">Female</label></td>
 					</tr>
 					<tr>
-						<td><label for="dob">Date Of Birth</label></td>
-						<td><input type="date" id="dob"></td>
+						<td class="noleft"><label for="dob">Date Of Birth</label></td>
+						<td><input type="date" id="dob" class="inputs"></td>
 					</tr>
 					<tr>
-						<td style="vertical-align:top"><label for="address">Address</label></td>
+						<td id="top"><label for="address">Address</label></td>
 						<td><textarea id="address" width="360px" height="135px"></textarea></td>
 					</tr>
 					<tr>
