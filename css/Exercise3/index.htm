@@ -1,0 +1,58 @@
+<DOCTYPE! html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS forms</title>
+	<link rel="stylesheet" type="text/css" href="exe3.css">
+</head>
+<body>
+	<header>
+		<img src="vinsol-logo.png" alt="Vinsol Corporation">
+		<div class="topcont">
+			<span id="toptext">Email us at:<span style="color:#045198;font:13px Tahoma">sales@vinsol.com</span></span>&nbsp&nbsp
+			<span id="toptext">Skype:<span style="color:#045198;font:13px Tahoma">Vinsol</span></span>
+		</div>
+	</header>
+	<div class="container">
+		<h1>Please fill the form below</h1>
+		<div class="formbox">
+			<form>
+				<table>
+					<tr>
+						<td><label for="firstname">First Name</label></td>
+						<td><input type="text" id="firstname"></td>
+					</tr>
+					<tr>
+						<td><label for="lastname">Last Name</label></td>
+						<td><input type="text" id="lastname"></td>
+					</tr>
+					<tr>
+						<td><label for="mail">Email Address</label></td>
+						<td><input type="email" id="mail"></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Password</label></td>
+						<td><input type="password" id="pass"></td>
+					</tr>
+					<tr>
+						<td><label for="gender">Gender</label></td>
+						<td><input type="radio" id="gender" name="gen" value="male" style="margin-left: 20px ;margin-top:10px" checked><span class="gender">Male<input type="radio" id="gender" name="gen" value="female" style="margin-left: 20px">Female</span></td>
+					</tr>
+					<tr>
+						<td><label for="dob">Date Of Birth</label></td>
+						<td><input type="date" id="dob"></td>
+					</tr>
+					<tr>
+						<td style="vertical-align:top"><label for="address">Address</label></td>
+						<td><textarea id="address" width="360px" height="135px"></textarea></td>
+					</tr>
+					<tr>
+						<td></td>
+						<td><input type="submit" value="Submit Details"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

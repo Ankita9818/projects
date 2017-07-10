@@ -1,0 +1,80 @@
+header{
+	border-bottom:2px solid #db2927;
+	padding: 5px;
+}
+
+#toptext{
+	font:13px tahoma;
+	color:black;
+	
+}
+.topcont{
+	position: absolute;
+	top: 8%;
+	right:10;
+}
+.container{
+	margin:auto;
+	
+	width:500px;
+}
+h1{
+	
+	font:18px tahoma;
+	color:#2c286d;
+	margin-bottom: 0;
+	
+	
+}
+.formbox{
+	margin:auto;
+	background-color: #ececec;
+	border:1px solid #bcbcbc;
+	width: 500px;
+	padding: 20px 30px;
+}
+input[type=text],input[type=email],input[type=password]{
+	width:360px;
+	height:25px;
+	background-color: white;
+	border:1px solid #b9b9b9;
+	font:13px tahoma;
+	color:#6f6f6f;
+	margin-left: 20px; 
+}
+input[type=date]{
+	width:360px;
+	height:25px;
+	background-color: white;
+	border:1px solid #b9b9b9;
+	font:13px tahoma;
+	color:#6f6f6f;
+	margin-left: 20px; 
+}
+.gender{
+	font:13px tahoma;
+	color:#6f6f6f;
+}
+input[type=submit]{
+	width:130px;
+	height:32px;
+	background-color: #dc2927;
+	border:1px solid #a10200;
+	text-align: center;
+	font:14px tahoma;
+	color: white;
+	margin-left: 20px; 
+	margin-top: 10px;
+}
+textarea{
+	width: 360px;
+	height: 135px;
+	background-color: white;
+	border:1px solid #b9b9b9;
+	margin-left: 20px;
+	resize:none;
+}
+label{
+	font:14px tahoma;
+	color:black;
+}
