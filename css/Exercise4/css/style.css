@@ -1,0 +1,97 @@
+ul {
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+li a {
+  display: inline-block;
+  color: #6f6f6f;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #ececec;
+}
+#cart{
+  float:right;
+}
+#icon{
+  font-size:16px;
+  float: left;
+  font-weight: bold;
+  border-right:0.5px solid #ececec;
+}
+.topbar{
+  margin:auto;
+  width:60%;
+}
+
+.imgbox {
+  
+    text-align: center;
+    border: 1px solid #ececec;
+    margin: 10px;
+    padding: 30px;
+    display: table-cell;
+
+}
+table{
+  margin: auto;
+  width: 60%;
+} 
+
+button{
+  font:10px;
+  padding: 0;
+  color:#bcbcbc;
+  margin:0;
+  border:none;
+  background-color: white;
+}
+span{
+  font-weight: bold;
+  color:#6f6f6f;
+  
+}
+h1{
+  text-align: center;
+  padding-top: 40px;
+  color:#6f6f6f;
+  font:16px tahoma;
+  overflow:hidden;
+}
+
+h1:before,
+h1:after {
+    background-color: #ececec;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 10%;
+}
+h1:before {
+    right: 0.5em;
+    margin-left: -50%;
+}
+h1:after {
+    left: 0.5em;
+    margin-right: -50%;
+}
+#brandd{
+  position: relative;
+  left:7px;
+  padding: 10px;
+}
+.brandimg{
+  width:90%;
+}
