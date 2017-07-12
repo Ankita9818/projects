@@ -38,15 +38,31 @@ li a:hover {
   
     text-align: center;
     border: 1px solid #ececec;
-    margin: 10px;
-    padding: 30px;
+    
+    padding: 20px;
     display: table-cell;
 
 }
-table{
+.brandbox {
+    padding: 20px;
+    display: table-cell;
+    margin-left: 0px;
+}
+
+.main{
   margin: auto;
   width: 60%;
+  display: table;
+  border-spacing: 20px;
+
 } 
+.brands{
+  margin: auto;
+  display: table;
+  padding: 10px 0px;
+  width: 60%;
+
+}
 
 button{
   font:10px;
@@ -63,7 +79,7 @@ span{
 }
 h1{
   text-align: center;
-  padding-top: 40px;
+  padding-top: 20px;
   color:#6f6f6f;
   font:16px tahoma;
   overflow:hidden;
@@ -87,11 +103,6 @@ h1:after {
     left: 0.5em;
     margin-right: -50%;
 }
-#brandd{
-  position: relative;
-  left:7px;
-  padding: 10px;
-}
 .brandimg{
-  width:90%;
+  width:100%;
 }
