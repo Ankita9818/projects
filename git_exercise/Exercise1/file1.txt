@@ -3,4 +3,4 @@ this is a file in git exercise1.
 
 
 
-changes from branch master
+Resolved conflict at merging manually
