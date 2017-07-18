@@ -4,3 +4,8 @@ this is a file in git exercise1.
 
 
 Resolved conflict at merging manually
+
+
+
+
+changing it at step19
