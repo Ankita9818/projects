@@ -7,3 +7,9 @@ file1 of second git exercise for practicing tags
 
 
  some more changes in this file and will get the tag 1.0.1.
+
+
+
+
+ hi i have added some more changes at step 5 which will lead 1.0.1 to 1.0.2 .
+ i did this by checking out at the tag by creating a branch at  that.
