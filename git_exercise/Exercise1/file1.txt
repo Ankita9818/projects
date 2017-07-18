@@ -1,6 +1,1 @@
 this is a file in git exercise1.
-
-
-
-
-doing changes after commiting those changes at steo 5by revert
