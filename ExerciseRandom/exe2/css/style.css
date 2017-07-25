@@ -1,0 +1,154 @@
+*{
+  box-sizing: border-box;
+}
+.main_container{
+  height:99vh;
+  margin: 0;
+  padding:0;
+  position:relative;
+}
+.header{
+  height:10vh;
+}
+.topbar{
+  float:right;
+  padding-right: 50px;
+}
+@font-face {
+  font-family: myFont;
+  src: url(fonts/GEMELLI_.TTF);
+}
+.button {
+  background-color: white;
+  border-radius:5px;
+  border: none;
+  color: black;
+  display: inline-block;
+  font: 16px myFont;
+  margin-top: 0;
+  padding: 15px 32px;
+  text-decoration: none;
+}
+.button.button2{
+  color: hsla(120,100%,25%,0.5);
+  font:20px initial;
+  padding: 15px 40px;
+}
+.button.active{
+  background-color:hsla(120,100%,25%,0.5);
+}
+.table_div{
+  display: table;
+  height: 100%;
+  position: absolute;
+  width:100%;
+}
+.content{
+  color:blue;     /*to make it visible*/
+  display: table-cell;
+  font-size:60px;
+  margin:auto;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.content .main_italic{
+  font-size: 90px;
+  font-style: italic;
+  font-weight: bold;
+}
+div.block{
+  border-bottom:10px solid white;
+  border-right:10px solid white;
+  position: absolute;
+}
+div.common1{
+  height: 30.5%;
+}
+div.common2{
+  top:30.5%;
+}
+div.common3{
+  top:75.5%;
+}
+div.commonbordernone{
+  border-right: none;
+}
+div.block1{
+  left:0;
+  width:15%;
+}
+div.block2{
+  left:15%;
+  width: 15.5%;
+}
+div.block3{
+  left:30.5%;
+  width: 26%;
+}
+div.block4{
+  height: 53.3%;
+  left:56.5%;
+  width: 19%;
+}
+div.block5{
+  left:75.5%;
+  width: 16.5%;
+}
+div.block6{
+  height: 30.5%;
+  left:92%;
+  width: 8%;
+}
+div.block7{
+  height:45%;
+  left:0;
+  width: 42.2%;
+}
+div.block8{
+  height:23%;
+  left:42.2%;
+  width: 14.3%;
+}
+div.block9{
+  height:45%;
+  left:75.5%;
+  width: 24.6%;
+}
+
+div.block10{
+  height: 14%;
+  left:0;
+  width: 21.1%;
+}
+div.block11{
+  height: 14%;
+  left:21.1%;
+  width: 21.1%;
+}
+div.block12{
+  height: 36%;
+  left:42.2%;
+  top:53.5%;
+  width: 33.3%;
+}
+div.block13{
+  height: 14%;
+  left:75.5%;
+  width: 24.6%;  
+}
+div.outerblock{
+  -webkit-justify-content: center;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  max-height: 100%;
+  max-width:100%;
+  overflow: hidden;
+}
+.img{
+  display:block;
+  margin:auto;
+  max-height:100%;
+  max-width: 100%;
+}
