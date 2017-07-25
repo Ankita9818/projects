@@ -1,0 +1,12 @@
+steps:  Git tags
+
+1: git init 
+	 git add .
+	 git push -u origin master
+2: git tag 1.0.0
+3: changes then
+	 git tag -a 1.0.1 -m "first tag"
+4: git tag    //lists all tags
+5: git push origin --tags.  // pushes all tags at once
+
+
