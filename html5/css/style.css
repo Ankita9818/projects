@@ -1,0 +1,55 @@
+.header{
+	background-color: rgb(153,153,153);
+	color:white;
+	font-size: 20px;
+	font-weight: bold;
+	height: 10vh;
+	line-height: 10vh;
+	text-align: center;
+}
+.container{
+	display: table;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.container2{
+	display: table-cell;
+	vertical-align: middle;
+}
+.main_container{
+	border:1px solid black;
+	margin:auto;
+	outline-offset: 8px;
+	outline: rgb(153,153,153) solid thin;
+	width: 70%;
+}
+.inputs{
+	padding: 3px;
+	width: calc(100% - 20px);
+}
+.table{
+	display: table;
+	margin: auto;
+	width: 80%;
+}
+.row{
+	display: table-row;
+	padding: 20px;
+}
+.cell1{
+	display: table-cell;
+	padding: 10px;
+	text-align: right;
+	width:300px;
+}
+.cell2{
+	text-align: center;
+	width: 900px;
+}
+.cell3{
+	text-align: left;
+}
+.labels{
+	font-family: tahoma;
+}
