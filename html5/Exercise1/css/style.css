@@ -1,0 +1,47 @@
+body{
+  font-family: tahoma;
+}
+.header{
+  background-color: rgb(153,153,153);
+  color:white;
+  font-size: 20px;
+  font-weight: bold;
+  height: 10vh;
+  line-height: 10vh;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.container{
+  display: table;         
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.container2{
+  display: table-cell;
+  vertical-align: middle;
+}
+.main_container{
+  border:1px solid black;
+  height: 65%;
+  margin:auto;
+  outline-offset: 8px;
+  outline: rgb(153,153,153) solid thin;
+  width: 70%;
+}
+.inputs{
+  padding: 3px;
+  width: 80%;
+}
+.labels{
+  display: inline-block;
+  float: left;
+  padding: 10px;
+  text-align: right;
+  width:30%;
+}
+.fields{
+  text-align: left;
+  width:60%;
+
+}
