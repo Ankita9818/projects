@@ -1,5 +1,7 @@
 body{
   font-family: tahoma;
+  padding: 0;
+  margin: 0;
 }
 .header{
   background-color: rgb(153,153,153);
@@ -13,8 +15,7 @@ body{
 }
 .container{
   display: table;         
-  height: 100%;
-  position: absolute;
+  height: 100vh;
   width: 100%;
 }
 .container2{
@@ -35,7 +36,6 @@ body{
 }
 .labels{
   display: inline-block;
-  float: left;
   padding: 10px;
   text-align: right;
   width:30%;
@@ -43,5 +43,4 @@ body{
 .fields{
   text-align: left;
   width:60%;
-
 }
