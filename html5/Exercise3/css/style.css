@@ -11,7 +11,7 @@ body{
   display:none;
 }
 .header{
-  line-height: 30vh;
+  padding: 5em 0;
   text-align: center;
   width: 100%;
 }
@@ -19,14 +19,14 @@ body{
   color:rgb(74,74,74);
   font-size:2.5em;
   letter-spacing: 0.25em;
-  padding: 1.5em;
+  padding: 0.7em;
   text-decoration: none;
 }
 .links{
   color:rgb(100,100,100);
   font-size: 0.8em;
   letter-spacing: 0.1em;
-  padding: 1em;
+  padding: 0.8em;
   text-decoration: none;
 }
 .links:hover{
@@ -59,7 +59,7 @@ body{
 }
 .content{
   margin: auto;
-  width: 70%;
+  width: 80%;
 }
 .image{
   height: auto;
@@ -121,30 +121,30 @@ body{
   font-weight: bold;
   letter-spacing: normal;
 }
-@media screen and (min-width: 1051px){
-  .thumbnail:nth-child(3n+1){
-    clear:left;
+@media (min-width: 768px){
+  .thumbnail:nth-child(3n+1)
+  {
+    clear:both;
   }
 }
 /*css for mobile in portrait mode*/
-@media screen and (max-width: 520px) and (orientation: portrait){
+@media (max-width: 480px), handheld and (orientation:portrait){
   body{
-    font:12px arial;
+    font:10px arial;
   }
   .header{
     line-height: 5vh;
     padding-top: 2em;
   } 
   .logo{
-    padding: 0;
     display: none;
   }
   .logo_small_width{
     color:rgb(74,74,74);
-    display: initial;
+    display: inline-block;
     font-size:2.5em;
     letter-spacing: 0.25em;
-    padding: 1.5em;
+    padding: 1em;
     text-decoration: none;
   }
   .links{
@@ -153,6 +153,10 @@ body{
   }
   .sec_header{
     font-size: 1.2em;
+  }
+  .content{
+    width:100%;
+    padding: 1em;
   }
   .thumbnail{
     display: inline-block;
@@ -175,30 +179,30 @@ body{
 
 /*css for landcape mode or smaller browser width*/
 
-@media screen and (max-width: 1050px) and (min-width: 521px) ,handheld and (orientation:landscape){
+@media (max-width: 767px) and (min-width: 481px), handheld and (orientation:landscape){
   .header{
     line-height: 3em;
-    padding-top: 2em;
+    padding: 2em 0;
   }
   .logo{
     display: none;
   }
   .logo_small_width{
     color:rgb(74,74,74);
-    display: initial;
+    display: inline-block;
     font-size:2.5em;
     letter-spacing: 0.25em;
-    padding: 1.5em;
+    padding: 1em;
     text-decoration: none;
   }
   .links{
-    padding: 1.3em;
+    padding: 1em;
   }
   .sec_header{
     font-size: 1.2em;
   }
   .content{
-    width:80%;
+    width:100%;
   }
   .image{
     width: 100%;
