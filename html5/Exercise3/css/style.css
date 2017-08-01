@@ -7,7 +7,7 @@ body{
   margin: 0;
   padding: 0;
 }
-.header480{
+.logo_small_width{
   display:none;
 }
 .header{
@@ -20,6 +20,7 @@ body{
   font-size:2.5em;
   letter-spacing: 0.25em;
   padding: 1.5em;
+  text-decoration: none;
 }
 .links{
   color:rgb(100,100,100);
@@ -39,7 +40,7 @@ body{
   box-shadow:5px 0 10px 0 rgba(0, 0, 0, 0.05); 
   font-size: 1.6em;
   letter-spacing: 0.1em;
-  overflow: auto;
+  padding-bottom: 2em;
   padding-top: 2em;
   text-align: center;
   width: 100%;
@@ -47,44 +48,36 @@ body{
 .headline{
   color:rgb(74,74,74);
   font-size: 2em;
-  line-height: 2em;
+  margin-bottom: -0.2em;
+  margin-top: 0.3em;
 }
 .section{
   margin: 0;
-  overflow:auto;
   padding-bottom: 3.6em;
   padding-top:3em;
   width: 100%;
 }
 .content{
   margin: auto;
-  overflow: auto;
   width: 70%;
 }
 .image{
   height: auto;
   max-width: 100%;
 }
-.image:hover{
+.thumbnail:hover{
   opacity:0.6;
 }
 .thumbnail{
   color:rgb(150,150,150);
   float: left;
-  margin-left: 1.5em;
   margin-top: 1.5em;
-  width:30%;
+  padding: 0 0.8em;
+  width:33.3%;
 }
 .desc {
-  height: 15vh;
-  overflow: hidden;
   padding-top: 1em;
-  text-align: left;
-  text-overflow: ellipsis;
-  width: 100%;
-}
-.desc:hover{
-  overflow: visible;
+  text-align: left; 
 }
 .img_desc{
   color:rgb(70,70,70);
@@ -97,6 +90,7 @@ body{
   line-height: 2em;
 }
 .footer{
+  clear:both;
   color: rgb(230,230,230);
   letter-spacing: 0.15em;
   padding-bottom: 3em;
@@ -109,6 +103,7 @@ body{
   font-size: 0.8em;  
   font-weight: bold;
   line-height: 1.5em;
+  text-decoration: none;
 }
 .footernote2{
   color:rgb(160,160,160);
@@ -126,33 +121,38 @@ body{
   font-weight: bold;
   letter-spacing: normal;
 }
+@media screen and (min-width: 1051px){
+  .thumbnail:nth-child(3n+1){
+    clear:left;
+  }
+}
 /*css for mobile in portrait mode*/
 @media screen and (max-width: 520px) and (orientation: portrait){
   body{
     font:12px arial;
   }
   .header{
+    line-height: 5vh;
+    padding-top: 2em;
+  } 
+  .logo{
+    padding: 0;
     display: none;
   }
-  .header480{
+  .logo_small_width{
+    color:rgb(74,74,74);
     display: initial;
-    padding-bottom: 1em;
-    text-align: center;
-    width: 100%;
+    font-size:2.5em;
+    letter-spacing: 0.25em;
+    padding: 1.5em;
+    text-decoration: none;
   }
   .links{
     font-size: 0.9em;
-    padding: 0.2em;
-  }
-  .logo{
-    padding: 0;
+    padding: 0.8em;
   }
   .sec_header{
     font-size: 1.2em;
-    padding-bottom: 1em;
-  }
-  .content{
-    width:70%;
   }
   .thumbnail{
     display: inline-block;
@@ -161,8 +161,8 @@ body{
     padding: 0; 
     width:100%;
   }
-  .desc{
-    max-height: 10vh;
+  .image{
+    width: 100%;
   }
   .image_desc2{
     font-size: 1em;
@@ -177,30 +177,28 @@ body{
 
 @media screen and (max-width: 1050px) and (min-width: 521px) ,handheld and (orientation:landscape){
   .header{
-    display: none;
-  }
-  .header480{
-    display: initial;
-    text-align: center;
-    width: 100%;
+    line-height: 3em;
+    padding-top: 2em;
   }
   .logo{
-    letter-spacing: 0.1em;
-    padding: 0.2em;
+    display: none;
+  }
+  .logo_small_width{
+    color:rgb(74,74,74);
+    display: initial;
+    font-size:2.5em;
+    letter-spacing: 0.25em;
+    padding: 1.5em;
+    text-decoration: none;
   }
   .links{
     padding: 1.3em;
   }
   .sec_header{
     font-size: 1.2em;
-    padding-bottom: 1em;
-  }
-  .headline{
-    line-height: 1.5em;
   }
   .content{
-    padding: 0;
-    width:70%;
+    width:80%;
   }
   .image{
     width: 100%;
@@ -211,17 +209,11 @@ body{
     padding: 1em;  
     width:50%;
   }
+  .thumbnail:nth-child(2n+1){
+    clear:left;
+  }
   .desc{
     font-size: 1em;
-    max-height: 10vh;
-    overflow: hidden;
-    padding: 0;
-    text-overflow: ellipsis;
-  }
-  .desc:hover{
-    overflow: visible;
-    text-overflow: inherit;
-    white-space: normal;
   }
   .img_desc{
     font-size: 0.8em;
