@@ -6,36 +6,26 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-  <div class="main_container">
+  <div class="main_container clearfix">
     <!--Header -->
     <header class="header">
       <a href="#"><img src="images/vinsol-logo.jpg" alt="VINSOL" class="logo"></a>
       <a href="#"><img src="images/vinsollogo2.jpg" alt="VINSOL" class="logo2"></a>
-      <nav class="nav">
-        <a href="#" class="links">Home</a>
-        <a href="#" class="links active">Success Stories</a>
-        <a href="#" class="links">Our Team</a>
-        <a href="#" class="links">Our Services</a>
-        <a href="#" class="links">Our Blog</a>
-        <a href="#" class="links">Jobs</a>
-        <a href="#" class="links">Contact</a>
-      </nav>
-      <!--  Side navigation menu for smaller displays -->
       <div class="navigation2">
         <button class="dropbtn2"><img src="images/navigation.png" class="navigationimage"></button>
-        <div class="dropdown-content2">
-          <a href="#">Home</a>
-          <a href="#">Success Stories</a>
-          <a href="#">Our team</a>
-          <a href="#">Our Services</a>
-          <a href="#">Our Blog</a>
-          <a href="#">Jobs</a>
-          <a href="#">Contact</a>
-        </div>
+        <nav class="nav">
+          <a href="#" class="links">Home</a>
+          <a href="#" class="links active">Success Stories</a>
+          <a href="#" class="links">Our Team</a>
+          <a href="#" class="links">Our Services</a>
+          <a href="#" class="links">Our Blog</a>
+          <a href="#" class="links">Jobs</a>
+          <a href="#" class="links">Contact</a>
+        </nav>
       </div>
     </header>    
     <!--Tag line Area -->
-    <div class="secondary_head">
+    <div class="secondary_head clearfix">
       <figure class="figure">
         <img src="images/image_graph.png">
       </figure>
@@ -43,10 +33,9 @@
       </section>
     </div>
     <!-- Tagline Area finished-->
-    <hr class="hr1"/>
     <!--Projects Dropdown -->
     <div class="dropdown">
-      <button class="dropbtn">VIEW ALL PROJECTS<img src="images/dropdownimage.png" width="15px" height="10px" />
+      <button class="dropbtn">VIEW ALL PROJECTS<img src="images/dropdownimage.png" class="dropdown_image"/>
       </button> 
       <div class="dropdown-content">
         <a href="#">iOS</a>
@@ -56,12 +45,12 @@
     </div>
     <!--Dropdown finished -->
     <!--Projects hoverable thumbnails-->
-    <section class="content">
+    <section class="content clearfix">
       <div class="thumbnail">
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image" />
           <div class="details">
-            <span class="title">Open Table</span> <br>Restaurant reservations on-the-go.
+            <h3 class="title">Open Table</h3><p class="small_description">Restaurant reservations on-the-go.</p>
           </div>
         </div>
       </div>
@@ -69,7 +58,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Chipotle</span> <br>Impeccable CMS solution for Chipotle Mexican Grill.
+            <h3 class="title">Chipotle</h3><p class="small_description">Impeccable CMS solution for Chipotle Mexican Grill.</p>
           </div>
         </div>
       </div>
@@ -77,7 +66,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image">
           <div class="details">
-            <span class="title">WeWork</span> <br>Web-based apps for co-working spaces.
+            <h3 class="title">WeWork</h3><p class="small_description">Web-based apps for co-working spaces.</p>
           </div>
         </div>
       </div>
@@ -85,7 +74,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Disney Holiday Magic</span> <br>Greeting card platform for iPad.
+            <h3 class="title">Disney Holiday Magic</h3><p class="small_description">Greeting card platform for iPad.</p>
           </div>
         </div>
       </div>
@@ -93,7 +82,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image">
           <div class="details">
-            <span class="title">treStique</span> <br>Perfect E-commerce solution for beauty products.
+            <h3 class="title">treStique</h3> <p class="small_description">Perfect E-commerce solution for beauty products.</p>
           </div>
         </div>
       </div>
@@ -101,55 +90,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Served by Stadium</span> <br>Mix and Match - Restaurants & Cuisines
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage1.png" class="image" />
-          <div class="details">
-            <span class="title">OpenTable</span> <br>Restaurant reservations on-the-go.
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage2.png" class="image">
-          <div class="details">
-            <span class="title">Chipotle</span> <br>Impeccable CMS solution for Chipotle Mexican Grill.
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage1.png" class="image">
-          <div class="details">
-            <span class="title">WeWork</span> <br>Web-based apps for co-working spaces.
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage2.png" class="image">
-          <div class="details">
-            <span class="title">Disney Holiday Magic</span> <br>Greeting card platform for iPad.
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage1.png" class="image">
-          <div class="details">
-            <span class="title">treStique</span> <br>Perfect E-commerce solution for beauty products.
-          </div>
-        </div>
-      </div>
-      <div class="thumbnail">
-        <div class="hoverable_thumbnail"> 
-          <img src="images/projectimage2.png" class="image">
-          <div class="details">
-            <span class="title">Served by Stadium</span> <br>Mix and Match - Restaurants & Cuisines
+            <h3 class="title">Served by Stadium</h3> <p class="small_description">Mix and Match - Restaurants &amp; Cuisines.</p>
           </div>
         </div>
       </div>
@@ -157,7 +98,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image" />
           <div class="details">
-            <span class="title">OpenTable</span> <br>Restaurant reservations on-the-go.
+            <h3 class="title">OpenTable</h3> <p class="small_description">Restaurant reservations on-the-go.</p>
           </div>
         </div>
       </div>
@@ -165,7 +106,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Chipotle</span> <br>Impeccable CMS solution for Chipotle Mexican Grill.
+            <h3 class="title">Chipotle</h3> <p class="small_description">Impeccable CMS solution for Chipotle Mexican Grill.</p>
           </div>
         </div>
       </div>
@@ -173,7 +114,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image">
           <div class="details">
-            <span class="title">WeWork</span> <br>Web-based apps for co-working spaces.
+            <h3 class="title">WeWork</h3> <p class="small_description">Web-based apps for co-working spaces.</p>
           </div>
         </div>
       </div>
@@ -181,7 +122,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Disney Holiday Magic</span> <br>Greeting card platform for iPad.
+            <h3 class="title">Disney Holiday Magic</h3> <p class="small_description">Greeting card platform for iPad.</p>
           </div>
         </div>
       </div>
@@ -189,7 +130,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image">
           <div class="details">
-            <span class="title">treStique</span> <br>Perfect E-commerce solution for beauty products.
+            <h3 class="title">treStique</h3> <p class="small_description">Perfect E-commerce solution for beauty products.</p>
           </div>
         </div>
       </div>
@@ -197,7 +138,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Served by Stadium</span> <br>Mix and Match - Restaurants & Cuisines
+            <h3 class="title">Served by Stadium</h3> <p class="small_description">Mix and Match - Restaurants &amp; Cuisines.</p>
           </div>
         </div>
       </div>
@@ -205,7 +146,7 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage1.png" class="image" />
           <div class="details">
-            <span class="title">OpenTable</span> <br>Restaurant reservations on-the-go.
+            <h3 class="title">OpenTable</h3> <p class="small_description">Restaurant reservations on-the-go.</p>
           </div>
         </div>
       </div>
@@ -213,7 +154,55 @@
         <div class="hoverable_thumbnail"> 
           <img src="images/projectimage2.png" class="image">
           <div class="details">
-            <span class="title">Chipotle</span> <br>Impeccable CMS solution for Chipotle Mexican Grill.
+            <h3 class="title">Chipotle</h3> <p class="small_description">Impeccable CMS solution for Chipotle Mexican Grill.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage1.png" class="image">
+          <div class="details">
+            <h3 class="title">WeWork</h3> <p class="small_description">Web-based apps for co-working spaces.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage2.png" class="image">
+          <div class="details">
+            <h3 class="title">Disney Holiday Magic</h3> <p class="small_description">Greeting card platform for iPad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage1.png" class="image">
+          <div class="details">
+            <h3 class="title">treStique</h3> <p class="small_description">Perfect E-commerce solution for beauty products.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage2.png" class="image">
+          <div class="details">
+            <h3 class="title">Served by Stadium</h3> <p class="small_description">Mix and Match - Restaurants &amp; Cuisines.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage1.png" class="image" />
+          <div class="details">
+            <h3 class="title">OpenTable</h3><p class="small_description">Restaurant reservations on-the-go.</p>
+          </div>
+        </div>
+      </div>
+      <div class="thumbnail">
+        <div class="hoverable_thumbnail"> 
+          <img src="images/projectimage2.png" class="image">
+          <div class="details">
+            <h3 class="title">Chipotle</h3><p class="small_description">Impeccable CMS solution for Chipotle Mexican Grill.</p>
           </div>
         </div>
       </div>
@@ -221,7 +210,7 @@
     <!--project area finished -->
   </div>
   <!--footer starts -->
-  <footer class="footer">
+  <footer class="footer clearfix">
     <div class="footer_container"> 
       <!-- GET IN TOUCH BOX-->
       <div class="orangebox">
@@ -243,7 +232,7 @@
         </div>
       </div>
       <div class="twitter">                                     <!-- column of footer links-->
-        <span class="footerlink_title">TWITTER</span>
+        <h3 class="footerlink_title">TWITTER</h3>
         <p><span class="active">25 Jan </span>Integrating your <a href="#" class="active footer_hoverlinks">@SpreeCommerce</a> Store with @awscloud CloudFront CDN to serve your site pages faster https://t.co/lu7XeeTgSH #ecommerce</span></p>
         <p><span class="active">14 Jan </span>AR Has Arrived And 7 Other Big Takeaways from CES 2017 https://t.co/yNeQnWT3WL via <span class="active">@cbinsights</span></p>
         <p><span class="active">29 Dec </span>RT <a href="#" class="active footer_hoverlinks">@bansalakhil</a>: Better Manage your store's digital assets with this new extension by @the_vinsol #spreecommerce https://t.co/MdujnyY71B</p>
@@ -252,7 +241,23 @@
       </div>
       <div class="table_for_links">
         <div class="company">
-          <span class="footerlink_title">COMPANY</span>       <!-- First column of footer links-->
+          <h3 class="footerlink_title">SERVICES</h3>        <!-- column of footer links-->
+          <ul class="list">
+            <li><a href="#" class="footerlinks">Ruby on Rails</a></li>
+            <li><a href="#" class="footerlinks">Spree Commerce</a></li>
+            <li><a href="#" class="footerlinks">iOS</a></li>
+            <li><a href="#" class="footerlinks">Android</a></li>
+          </ul>
+          <h3 class="footerlink_title">OPEN SOURCE</h3>       <!--column of footer links-->
+          <ul class="list">
+            <li><a href="#" class="footerlinks">Spree Commerce</a></li>
+            <li><a href="#" class="footerlinks">Extensions</a></li>
+            <li><a href="#" class="footerlinks">Spree Commerce</a></li>
+            <li><a href="#" class="footerlinks">Android App</a></li>
+          </ul>
+        </div>
+        <div class="company">
+          <h3 class="footerlink_title">COMPANY</h3>       <!-- First column of footer links-->
           <ul class="list">
             <li><a href="#" class="footerlinks">Team</a></li>
             <li><a href="#" class="footerlinks">Success Stories</a></li>
@@ -262,28 +267,12 @@
             <li><a href="#" class="footerlinks">OpenSource</a></li>
             <li><a href="#" class="footerlinks">Contact Us</a></li>
           </ul>
-        <span class="footerlink_title">BLOG</span>           <!-- column of footer links-->
-        <ul class="list">
-          <li><a href="#" class="footerlinks">Ruby on Rails</a></li>
-          <li><a href="#" class="footerlinks">Spree Commerce</a></li>
-          <li><a href="#" class="footerlinks">iOS</a></li>
-          <li><a href="#" class="footerlinks">Android</a></li>
-        </ul>
-      </div>
-      <div class="company">
-        <span class="footerlink_title">SERVICES</span>        <!-- column of footer links-->
-        <ul class="list">
-          <li><a href="#" class="footerlinks">Ruby on Rails</a></li>
-          <li><a href="#" class="footerlinks">Spree Commerce</a></li>
-          <li><a href="#" class="footerlinks">iOS</a></li>
-          <li><a href="#" class="footerlinks">Android</a></li>
-        </ul>
-        <span class="footerlink_title">OPEN SOURCE</span>       <!--column of footer links-->
-        <ul class="list">
-          <li><a href="#" class="footerlinks">Spree Commerce</a></li>
-          <li><a href="#" class="footerlinks">Extensions</a></li>
-          <li><a href="#" class="footerlinks">Spree Commerce</a></li>
-          <li><a href="#" class="footerlinks">Android App</a></li>
+          <h3 class="footerlink_title">BLOG</h3>           <!-- column of footer links-->
+          <ul class="list">
+            <li><a href="#" class="footerlinks">Ruby on Rails</a></li>
+            <li><a href="#" class="footerlinks">Spree Commerce</a></li>
+            <li><a href="#" class="footerlinks">iOS</a></li>
+            <li><a href="#" class="footerlinks">Android</a></li>
           </ul>
         </div>
       </div>
