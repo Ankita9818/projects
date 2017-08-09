@@ -12,8 +12,8 @@ body{
 
 .main_container{
   margin: auto;
-  padding:30px 0px;
-  width: 1040px;
+  padding:20px 0px;
+  width: 1000px;
 }
 
 .logo{
@@ -26,13 +26,11 @@ body{
   -ms-transform: rotate(-20deg); /* IE 9 */
   -webkit-transform: rotate(-20deg); /* Safari */
   color: rgb(172,163,132);
+  display: inline-block;
   font-size:38px;
   letter-spacing: 0.1px;
   line-height: 1.2em;
-  position: relative;
-  top:60px;
   transform: rotate(-20deg); /* Standard syntax */
-  width: 30%;
 }
 
 .consulting{
@@ -41,6 +39,9 @@ body{
   margin-top: 0;
 }
 .circle_container{
+  -ms-transform: translate(0,-100px); /* IE 9 */
+  -webkit-transform: translate(0,-100px); /* Safari */
+  transform: translate(0,-100px); /* Standard syntax */
   width: 58%;
 }
 
@@ -53,7 +54,8 @@ body{
 .circle {
   border-radius: 50%;
   color: white;
-  float: right;
+  float: left;
+  position: relative;
   text-align: center;
 }
 
@@ -69,8 +71,9 @@ body{
   background: -o-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Opera 11.1 to 12.0 */
   background: -webkit-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Safari 5.1 to 6.0 */
   background: linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* Standard syntax (must be last) */
-  height: 280px;
-  width: 280px;
+  height: 265px;
+  width: 265px;
+  z-index: -1;
 }
 
 .circle2{
@@ -79,10 +82,11 @@ body{
   background: -o-linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* For Opera 11.1 to 12.0 */
   background: -webkit-linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* For Safari 5.1 to 6.0 */
   background: linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* Standard syntax (must be last) */
-  height: 260px;
-  margin-right: -85px;
+  height: 245px;
+  margin-right: -82px;
   margin-top: 40px;
-  width: 260px;
+  width: 245px;
+  z-index: 0;
 }
 
 .circle3{
@@ -91,10 +95,11 @@ body{
   background: -o-linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* For Opera 11.1 to 12.0 */
   background: -webkit-linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* For Safari 5.1 to 6.0 */
   background: linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* Standard syntax (must be last) */
-  height: 220px;
-  margin-right:-85px;
+  height: 210px;
+  margin-right:-82px;
   margin-top: 110px; 
-  width: 220px;
+  width: 210px;
+  z-index: 1;
 }
 
 .text { 
@@ -128,7 +133,7 @@ body{
 }
 
 .circle_desc{
-  margin-left: 50px;
+  margin-left: 40px;
 }
 
 #large_font{
@@ -137,13 +142,13 @@ body{
 }
 
 .inner_container{
-  padding: 10px 0;
+  padding: 5px 0 0 0;
 }
 
 .form_container{
   float: right;
-  padding: 10em 0;
-  width: 38%;
+  padding: 7em 0;
+  width: 35%;
 }
 
 .input{
@@ -155,7 +160,7 @@ body{
   border-radius:5px;
   border:none;
   box-shadow: inset 0px 0px 10px 0 rgba(0,0,0,0.4);
-  color: #ccc;
+  color: #222;
   font-family: 'Comfortaa';
   font-size: 1em;
   margin: 8px 0;
@@ -199,7 +204,7 @@ body{
   font-family: 'Pacifico';
   margin: 0 auto;
   text-align: center;
-  width: 80%;
+  width: 85%;
 }
 
 .nomargin{
@@ -207,13 +212,106 @@ body{
   margin-top: 0;
 }
 
-@media (max-width: 1050px) and (min-width: 751px){
+
+@media (max-width: 999px) and (min-width: 768px){
   .main_container{
+    padding: 5px;
+    width: 100%;
+  }
+
+  .circle_container{
+    -ms-transform: translate(0,-60px); /* IE 9 */
+    -webkit-transform: translate(0,-60px); /* Safari */
+    transform: translate(0,-60px); /* Standard syntax */
+    width: 60%;
+  }
+
+  .circle1{
+    height: 220px;
+    width: 220px;
+  }
+
+  .circle2{
+    height: 195px;
+    width: 195px;
+    margin-top: 47px;
+  }
+
+  .circle3{
+    height: 170px;
+    width: 170px;
+  }
+
+  .text {  
+    font-size: 14px;
+    padding: 4px;
+  }
+
+  .tilted_text {
+    font-size:32px;
+  }
+
+  .consulting{
+    font-size: 54px;
+  }
+
+  .form_container{
+    width: 40%;
+  }
+
+  .text { 
+    font-size: 13px;
+    padding: 0 15px;
+  }
+
+  .headings{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  #ror_heading{
+    font-size: 14px;
+    line-height: 1em;
+    margin:0;
+  }
+
+  .ios{
+    font-size: 30px;
+    margin-bottom: 4px;
+  }
+
+  .ror{
+    margin-bottom: 0;
+  }
+
+  .description{
+    line-height: 1.2em;
+  }
+
+  .circle_desc{
+    margin-left: 68px;
+  }
+
+  #large_font{
+    font-size: 16px;
+    line-height: 1.3em;
+  }
+
+  .portfolio_button{
+    font-size: 1.5em;
+  }
+
+}
+
+@media (max-width: 767px) and (min-width: 758px){
+  .main_container{
+    padding: 1em 0;
     width: 100%;
   }
 
   .form_container{
-    padding: 2em;
+    padding: 1.5em;
     width: 100%;
   }
 
@@ -226,13 +324,16 @@ body{
   }
 
   .circle_container{
+    -ms-transform: translate(0,0); /* IE 9 */
+    -webkit-transform: translate(0,0); /* Safari */
     margin:auto;
+    transform: translate(0,0); /* Standard syntax */
     width: 750px;
   }
 
   .tilted_text{
     font-size: 30px;
-    padding: 30px;
+    padding: 20px;
     top: 0;
     transform: rotate(0deg);
   }
@@ -252,6 +353,13 @@ body{
     margin-top: 0px;
   }
   
+  .headings{
+    margin-bottom: 20px; 
+  }
+
+  .ios{
+    margin-bottom: 6px;
+  }
   .text {  
     font-size: 16px;
     padding: 4px;
@@ -269,7 +377,7 @@ body{
 
 }
 
-@media (max-width: 750px){
+@media (max-width: 757px){
   header{
     padding: 10px;
     text-align: center;
@@ -298,12 +406,18 @@ body{
   }
 
   .tilted_text{
-    font-size: 36px;
+    font-size: 30px;
     top: 0;
     transform: rotate(0deg);
   }
 
+  .consulting{
+    font-size: 54px;
+  }
   .circle_container{
+    -ms-transform: translate(0,0); /* IE 9 */
+    -webkit-transform: translate(0,0); /* Safari */
+    transform: translate(0,0); /* Standard syntax */
     margin:auto;
     padding-top: 10px;
     width: 250px;
@@ -312,6 +426,7 @@ body{
   .circle{
     clear: both; 
     height: 250px;
+    margin-bottom: 20px;
     width: 250px;
   }
 
