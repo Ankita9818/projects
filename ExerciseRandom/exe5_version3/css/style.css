@@ -1,0 +1,314 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background:url('../images/bg.jpg') no-repeat center fixed;
+  background-size: cover;
+  font-family: 'Comfortaa';
+  margin: 0;
+  padding:0;
+}
+
+.header{
+  margin: auto;
+  max-width: 996px;
+  padding:20px 0px;
+}
+
+.content{
+  margin: auto;
+  max-width: 996px;
+  padding:20px 0px;
+}
+
+.logo{
+  height: 80px;
+  padding: 2px;
+  width: 200px;
+}
+
+.left_container{
+  display: inline-block;
+}
+
+.tilted_text {
+  -ms-transform: rotate(-20deg); /* IE 9 */
+  -webkit-transform: rotate(-20deg); /* Safari */
+  color: rgb(172,163,132);
+  display: inline-block;
+  font-size:38px;
+  letter-spacing: 0.1px;
+  line-height: 1.2em;
+  margin-bottom: 0;
+  transform: rotate(-20deg); /* Standard syntax */
+}
+
+.consulting{
+  font-size: 60px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.circle {
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+}
+
+.circle:before ,.circle:after{
+  content:'';
+  display: block;
+  padding: 20px;
+}
+
+.circle1{
+  background: rgb(52,52,52); /* For browsers that do not support gradients */
+  background: -moz-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* Standard syntax (must be last) */
+  height: 265px;
+  margin-top: -30px;
+  vertical-align: top;
+  width: 265px;
+  z-index: -1;
+}
+
+.circle2{
+  background: rgb(235,44,35); /* For browsers that do not support gradients */
+  background: -moz-linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* For Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(rgb(235,44,35),rgb(183,28,20)); /* Standard syntax (must be last) */
+  height: 245px;
+  margin-right: -82px;
+  vertical-align: middle;
+  width: 245px;
+  z-index: 0;
+}
+
+.circle3{
+  background: rgb(58,32,134); /* For browsers that do not support gradients */
+  background: -moz-linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* For Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(rgb(58,32,134),rgb(39,31,103)); /* Standard syntax (must be last) */
+  height: 210px;
+  margin-right:-82px;
+  vertical-align: bottom;
+  width: 210px;
+  z-index: 1;
+}
+
+.text { 
+  font-size: 13px;
+  padding: 0 35px;
+}
+
+.headings{
+  font-size: 38px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+#ror_heading{
+  font-size: 16px;
+  line-height: 1em;
+  margin:0;
+}
+
+.ios{
+  font-size: 55px;
+  margin-bottom: 20px;
+}
+
+.ror{
+  margin-bottom: 0;
+}
+
+.description{
+  line-height: 1.8em;
+}
+
+.circle_desc{
+  margin-left: 40px;
+}
+
+#large_font{
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.inner_container{
+  padding: 5px 0 0 0;
+}
+
+.form_container{
+  -ms-transform: translate(0,50px); /* IE 9 */
+  -webkit-transform: translate(0,50px); /* Safari */
+  display: inline-block;
+  margin-left: 4vw;
+  transform: translate(0,50px); /* Standard syntax */
+  width: 35%;
+}
+
+.input{
+  background: rgb(235,235,237); /* For browsers that do not support gradients */
+  background: -moz-linear-gradient(rgb(234,235,237), rgb(242,237,234)); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(rgb(234,235,237), rgb(242,237,234)); /* For Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(rgb(234,235,237), rgb(242,237,234)); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(rgb(234,235,237), rgb(242,237,234)); /* Standard syntax (must be last) */
+  border-radius:5px;
+  border:none;
+  box-shadow: inset 0px 0px 10px 0 rgba(0,0,0,0.4);
+  color: #222;
+  font-family: 'Comfortaa';
+  font-size: 1em;
+  margin: 8px 0;
+  padding: 15px 12px;
+  width: 100%;
+}
+
+::-webkit-input-placeholder { /* Chrome */
+  color: #aaa;
+  text-shadow: 0 2px 0 white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #aaa;
+  text-shadow: 0 2px 0 white;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #aaa;
+  opacity: 1;
+  text-shadow: 0 2px 0 white;
+}
+:-moz-placeholder { /* Firefox 4 - 18 */
+  color: #aaa;
+  opacity: 1;
+  text-shadow: 0 2px 0 white;
+}
+
+.portfolio_button{
+  background: rgb(145,173,0); /* For browsers that do not support gradients */
+  background: -moz-linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* For Firefox 3.6 to 15 */
+  background: -o-linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* For Opera 11.1 to 12.0 */
+  background: -webkit-linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* For Safari 5.1 to 6.0 */
+  background: linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* Standard syntax (must be last) */
+  color: white;
+  font-size: 1.7em;
+  font-weight: bold;
+  padding: 16px;
+  text-shadow: 0 1px 0 black;
+}
+
+.lower_text{
+  font-family: 'Pacifico';
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px 80px;
+  max-width: 996px;
+}
+
+.nomargin{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+/* For screens smaller than 996px */
+@media (max-width: 995px) and (min-width: 610px){
+
+  .header{
+    background-color: rgba(255,255,255,0.2);
+    text-align:center;
+  }
+
+  .content{
+    max-width:610px;
+  }
+
+  .form_container{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .lower_text{
+    max-width: 610px;
+    padding: 60px 0;
+    text-align: left;
+  }
+
+}
+
+/* For screens smaller than 610px */
+@media (max-width: 609px){
+
+  .header{
+    background-color: rgba(255,255,255,0.2);
+    text-align:center;
+  }
+
+  .content{
+    max-width:300px;
+  }
+
+  .circle_container{
+    max-width: 270px;
+    margin: auto;
+  }
+  .form_container{
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .lower_text{
+    max-width: 100%;
+    padding: 30px 0;
+    text-align: left;
+  }
+
+  .tilted_text{
+    font-size: 30px;
+    padding: 10px 0;
+    transform: rotate(0deg);
+  }
+
+  .consulting{
+    font-size: 54px;
+  }
+
+  .circle{
+    display: block;
+    height: 270px;
+    width: 270px;
+  }
+
+  .circle2{
+    margin-top: -30px;
+  }
+
+  .text {  
+    font-size: 16px;
+    padding: 4px;
+  }
+
+  .circle_desc{
+    margin: 5px;
+    padding: 0;
+  }
+
+  .portfolio_button{
+    font-size:1.5em;
+  }
+
+  .lower_text{
+    max-width: 300px;
+    padding: 50px 5px;
+    text-align: left;
+  }
+
+}
+
