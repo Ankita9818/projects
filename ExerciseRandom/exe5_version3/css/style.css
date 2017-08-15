@@ -58,12 +58,6 @@ body{
   text-align: center;
 }
 
-.circle:before ,.circle:after{
-  content:'';
-  display: block;
-  padding: 20px;
-}
-
 .circle1{
   background: rgb(52,52,52); /* For browsers that do not support gradients */
   background: -moz-linear-gradient(rgb(52,52,52), rgb(0,0,0)); /* For Firefox 3.6 to 15 */
@@ -105,7 +99,7 @@ body{
 
 .text { 
   font-size: 13px;
-  padding: 0 35px;
+  padding: 25px 35px;
 }
 
 .headings{
@@ -213,13 +207,12 @@ body{
 }
 
 .nomargin{
-  margin-bottom: 0;
-  margin-top: 0;
+  margin:0 auto;
 }
 
 
 /* For screens smaller than 996px */
-@media (max-width: 995px) and (min-width: 610px){
+@media (max-width: 995px){
 
   .header{
     background-color: rgba(255,255,255,0.2);
@@ -246,11 +239,6 @@ body{
 /* For screens smaller than 610px */
 @media (max-width: 609px){
 
-  .header{
-    background-color: rgba(255,255,255,0.2);
-    text-align:center;
-  }
-
   .content{
     max-width:300px;
   }
@@ -258,16 +246,6 @@ body{
   .circle_container{
     max-width: 270px;
     margin: auto;
-  }
-  .form_container{
-    margin-left: 0;
-    width: 100%;
-  }
-
-  .lower_text{
-    max-width: 100%;
-    padding: 30px 0;
-    text-align: left;
   }
 
   .tilted_text{
@@ -292,7 +270,6 @@ body{
 
   .text {  
     font-size: 16px;
-    padding: 4px;
   }
 
   .circle_desc{
@@ -306,8 +283,6 @@ body{
 
   .lower_text{
     max-width: 300px;
-    padding: 50px 5px;
-    text-align: left;
   }
 
 }
