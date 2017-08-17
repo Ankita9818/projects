@@ -144,7 +144,7 @@ body{
   -ms-transform: translate(0,50px); /* IE 9 */
   -webkit-transform: translate(0,50px); /* Safari */
   display: inline-block;
-  margin-left: 4vw;
+  margin-left: 75px;
   transform: translate(0,50px); /* Standard syntax */
   width: 35%;
 }
