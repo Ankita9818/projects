@@ -11,15 +11,13 @@ body{
 }
 
 .header{
-  margin: auto;
-  max-width: 996px;
   padding:20px 0px;
 }
 
 .content{
   margin: auto;
   max-width: 996px;
-  padding:20px 0px;
+  padding:20px;
 }
 
 .logo{
@@ -108,7 +106,7 @@ body{
   margin-top: 10px;
 }
 
-#ror_heading{
+.ror_heading{
   font-size: 16px;
   line-height: 1em;
   margin:0;
@@ -131,7 +129,7 @@ body{
   margin-left: 40px;
 }
 
-#large_font{
+.large_font{
   font-size: 20px;
   line-height: 1.5em;
 }
@@ -144,7 +142,7 @@ body{
   -ms-transform: translate(0,50px); /* IE 9 */
   -webkit-transform: translate(0,50px); /* Safari */
   display: inline-block;
-  margin-left: 75px;
+  margin-left: 35px;
   transform: translate(0,50px); /* Standard syntax */
   width: 35%;
 }
@@ -192,7 +190,7 @@ body{
   background: -webkit-linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* For Safari 5.1 to 6.0 */
   background: linear-gradient(rgb(145,173,0), rgb(109,138,0)); /* Standard syntax (must be last) */
   color: white;
-  font-size: 1.7em;
+  font-size: 1.5em;
   font-weight: bold;
   padding: 16px;
   text-shadow: 0 1px 0 black;
@@ -200,10 +198,8 @@ body{
 
 .lower_text{
   font-family: 'Pacifico';
-  margin: 0 auto;
   text-align: center;
   padding: 20px 80px;
-  max-width: 996px;
 }
 
 .nomargin{
@@ -216,6 +212,7 @@ body{
 
   .header{
     background-color: rgba(255,255,255,0.2);
+    padding: 5px 0;
     text-align:center;
   }
 
@@ -229,7 +226,6 @@ body{
   }
 
   .lower_text{
-    max-width: 610px;
     padding: 60px 0;
     text-align: left;
   }
@@ -237,10 +233,10 @@ body{
 }
 
 /* For screens smaller than 610px */
-@media (max-width: 609px){
+@media (max-width: 625px){
 
   .content{
-    max-width:300px;
+    max-width:320px;
   }
 
   .circle_container{
@@ -255,13 +251,13 @@ body{
   }
 
   .consulting{
-    font-size: 54px;
+    font-size: 48px;
   }
 
   .circle{
     display: block;
-    height: 270px;
-    width: 270px;
+    height: 280px;
+    width: 280px;
   }
 
   .circle2{
@@ -270,6 +266,7 @@ body{
 
   .text {  
     font-size: 16px;
+    padding: 40px;
   }
 
   .circle_desc{
@@ -278,11 +275,7 @@ body{
   }
 
   .portfolio_button{
-    font-size:1.5em;
-  }
-
-  .lower_text{
-    max-width: 300px;
+    font-size:1.3em;
   }
 
 }
