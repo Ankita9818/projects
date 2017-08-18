@@ -16,8 +16,8 @@ body{
 
 .header{
   color: #d4922a;
-  height: 14vh;
-  padding: 4vh 0;
+  padding: 20px 0;
+  height: 80px;
 }
 
 .social_tab{
@@ -61,15 +61,21 @@ body{
 .nav{
   background-color:#032f3e;
   font-size: 14px;
-  max-height: 14vh;
+  padding: 0;
+  margin: 0;
+}
+
+.nav .container{
+  display: table;
 }
 
 .nav_links{
   border-left:1px solid #0d3948;
   color: white;
-  line-height: 14vh;
-  padding: 0;
-  width: 16.3%;
+  padding: 40px 0;
+  margin: 0;
+  width: 16.4%;
+  display: table-cell;
 }
 
 .nav_links:last-child{
@@ -78,7 +84,6 @@ body{
 
 .nav_links:hover{
   background-color: #0d3950;
-  text-decoration: underline;
 }
 
 .active{
@@ -92,7 +97,7 @@ body{
 .homepage{
   background-image: url('../images/homepage.png');
   background-size: cover;
-  height: 72vh;
+  height: calc(100vh - 175px);
   margin: 0;
   position: relative;
 }
@@ -111,13 +116,18 @@ body{
   width:100px;
 }
 
+.see_below a{
+  text-decoration: none;
+  color: #d4922a;
+}
+
 .caption{
   bottom: 5vh;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 50px;
   position: absolute;
-  right: 5vw;
+  right: 20px;
   text-align: right;
 }
 
@@ -131,12 +141,14 @@ body{
   background-color: #f8f9fb;
   font-family: 'Roboto', sans-serif;
   min-height: 656px;
-  padding: 90px 0;
+  padding: 50px 0;
 }
 
 .padded_cont{
-  padding: 0 50px;
+  padding: 50px;
+  text-align: center;
 }
+
 .page2_header{
   color:#032f3e;
   font-size: 24px;
@@ -145,11 +157,10 @@ body{
 }
 
 .afterline:after {
-  border:1px solid #d4922a;  
+  border:1px solid #d4922a;
   content:' ';
   display:block;
-  margin: 3% auto;
-  text-align: center;
+  margin: 20px auto;
   width: 25px;
 }
 
@@ -166,7 +177,9 @@ body{
 
 .circle_desc{
   display: inline-block;
-  max-width: 170px;
+  vertical-align: top;
+  width: 32.5%;
+  /*max-width: 170px;*/
 }
 
 .circle{
@@ -176,13 +189,11 @@ body{
   border:1px solid #d4922a;
   display: inline-block;
   font-size: 54px;
-  line-height: 60px;
-  padding: 3vw 4vw;
+  height: 150px;
+  line-height: 150px;
+  text-align: center;
   vertical-align: top;
-}
-
-.middle{
-  margin: 0 15%;
+  width: 150px;
 }
 
 .description{
@@ -193,6 +204,7 @@ body{
   line-height: 1.5em;
   padding: 10px;
   text-align: center;
+  width: 50%;
 }
 
 .circle:hover{
@@ -219,49 +231,53 @@ body{
   font-weight: 100;
   margin-top: 10px;
 }
-/*
+
+
 .page3 .content{
-  width: 60%;
+  width: 50%;
   display: table;
   font-size: 40px;
 }
+
 .page3 .rows{
   display: table-row;
 }
+
 .page3 .columns{
   display: table-cell;
   vertical-align: top;
   padding: 20px;
 }
+
 .page3 .content p{
-    color: white;
-    text-transform: uppercase;
-    line-height: 1.5em;
-    font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
 }
-.page3 .rows::after{
+
+.page3 .afterline::after{
   content:' ';
   display:block;
-  width: 1px;
-  height: 100px;
+  height: 45px;
+  margin: 15px auto;
   text-align: center;
-  margin: 3% 48.5%;
-  border-right:1px solid #d4922a; 
-
+  width: 0px;
 }
-*/
+
+/*
 .page3 .icons{
   display: inline-block;
   font-size: 40px;
   margin-right: 20px;
   width: 60px;
 }
+
 .page3 i:not(:last-child)::after{
-  border-right:1px solid white; 
+  border-right:1px solid white;
   content:' ';
   display:block;
   height: 45px;
-  margin: 15px 48.5%;
+  margin: 15px 40%;
   text-align: center;
   width: 1px;
 }
@@ -280,20 +296,19 @@ body{
 .page3 p{
   margin-bottom: 75px;
 }
-
+*/
 /* page3 finished */
 /*page4 started */
 .page4 .our_projects{
   background-color: #f8f9fb;
-  padding: 100px 18vw;
+  padding: 50px 0;
 }
 
 /*Video Section started*/
 .videosection{
   display: inline-block;
-  height: 75vh;
-  padding-bottom: 60px;
-  width: 48vw;
+  height: 500px;
+  width:68%;
 }
 
 .videosection img{
@@ -337,7 +352,7 @@ body{
 }
 
 .video_description .afterline::after{
-  margin:5% 0; 
+  margin:5% 0;
 }
 
 .video_description .desc{
@@ -388,9 +403,11 @@ body{
   vertical-align: top;
   position: relative;
 }
+
 .middle_images{
   display: inline-block;
 }
+
 .imagegal2{
   background-image: url('../images/imagegal2.png');
   background-position: center;
@@ -454,15 +471,16 @@ body{
 .description_section{
   display: inline-block;
   vertical-align: top;
-  width:300px; 
+  width:300px;
   font-size:28px;
   margin: 0 4vw;
 }
 
 .description_section p{
   margin-bottom: 0;
-  margin-top: 0; 
+  margin-top: 0;
 }
+
 .line2{
   font-weight: 300;
   margin-top: 0;
@@ -489,7 +507,7 @@ body{
 }
 /* Testimonials */
 .testimonials{
-  padding: 50px;
+  padding: 50px 0;
   background-image: url('../images/testimonial.png');
 }
 
@@ -497,11 +515,9 @@ body{
   background-color: #9e9e9e;
   width: 150px;
   height: 150px;
-  margin: 3vh calc(50% - 80px);
 }
 
 .testimonial_description{
-  margin: auto 20%;
   font: 16px 'Lato';
   line-height: 1.5em;
   font-weight: 300;
@@ -515,6 +531,7 @@ body{
   font-weight: bold;
   color:#032f3e;
 }
+
 .testimonial_desig{
   font-family: 'Roboto';
   font-weight: 400;
@@ -537,6 +554,7 @@ body{
   display: inline-block;
   vertical-align: top;
 }
+
 .contact_col{
   margin: 0 90px;
 }
@@ -548,7 +566,7 @@ body{
 }
 
 .footer_column .afterline::after{
-  margin:8% 0; 
+  margin:8% 0;
 }
 
 .footerlinks{
@@ -597,7 +615,7 @@ body{
   color: #5f737a;
   font:10px 'Roboto';
   font-weight: 300;
-  padding: 40px 0;  
+  padding: 40px 0;
 }
 
 .bottom_links{
@@ -616,14 +634,10 @@ body{
 }
 /*Footer ends*/
 
-@media (max-width: 999px)
+@media (max-width: 1050px)
 {
   .container{
     width: 90%;
-  }
-
-  .nav_links{
-    line-height: 10vh;
   }
 
   .logo{
@@ -634,12 +648,7 @@ body{
     padding: 0 10px;
   }
 
-  .middle{
-    margin: 0 10%;
-  }
-
   .description{
-    text-align: left;
     font-size: 16px;
   }
 
@@ -647,20 +656,17 @@ body{
     padding: 0;
   }
 
-  .circle_icons{
-    width: 600px;
-    margin: 5vh auto;
-  }
-
-  .circle_desc{
-    max-width: 140px;
-  }
-
   .page3{
-    background-size:100% 100%; 
+    background-size:100% 100%;
+    padding: 50px 0;
   }
 
   .video_description{
+    padding-top: 10px;
+    width: 100%;
+  }
+
+  .video_description .second_link{
     width: 100%;
   }
 
@@ -668,11 +674,17 @@ body{
     width: 100%;
     height: auto;
     padding-bottom: 20px;
+    padding-top: 20px;
+  }
+
+  .image_gallery{
+    padding: 50px 0;
   }
 
   .middle_images{
     width: calc(100% - 350px);
   }
+
   .imagegal2{
     width: 100%;
     margin: 0 0px 30px 30px;
@@ -691,7 +703,8 @@ body{
   }
 
   .skype_section .container{
-    width: 63%;
+    width: 60%;
+    text-align: center;
   }
 }
 
@@ -707,7 +720,7 @@ body{
 
   /* Drop-down button */
   .dropbtn {
-    background-color:white; 
+    background-color:white;
     border: none;
     cursor: pointer;
     padding: 0.5em;
@@ -726,32 +739,39 @@ body{
   }
 
   .dropdown-content {
-    background-color:#032f3e;
-    border:1px solid black;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color:white;
+    box-shadow: inset 0px 8px 16px 0px rgba(0,0,0,0.2);
     display: none;
     min-width: 10em;
     position: absolute;
+    text-align: center;
     right: 0;
     z-index: 1;
   }
 
   .dropdown-content a {
-    color: white;
-    padding: 0.5em;
+    color: #032f3e;
+    font-size: 12px;
+    padding: 1em;
     text-decoration: none;
     display: block;
   }
 
   .dropdown-content a:hover {
     background-color: #0d3950;
-    text-decoration: underline;
+    color:white;
+    font-weight: bold;
   }
 
   .dropdown:hover .dropdown-content {
     display: block;
   }
 /* Dropdown finished */
+
+  .homepage{
+    height: calc(100vh - 80px);
+  }
+
   .caption{
     font-size: 30px;
   }
@@ -771,15 +791,24 @@ body{
   }
 
   .circle{
-    padding: 50px;
+    line-height: 150px;
   }
 
   .description{
     font-size: 18px;
-    text-align: center;
+    width: 100%;
   }
-  .page3 .descriptions{
-    width: 250px;
+
+  .page3_header{
+    font-size: 38px;
+  }
+
+  .page3 .content{
+    width: 100%;
+  }
+
+  .page3 .columns{
+    padding: 10px 0 0 15px;
   }
 
   .imagegal{
@@ -806,6 +835,27 @@ body{
   }
 
   .description_section{
-    text-align: left;
+    width: 80%;
+    font-size: 24px;
+    text-align: center;
   }
+
+  .details{
+    font-size: 12px;
+    margin-right:0;
+    margin-left:0;
+    width: 100%;
+  }
+
+  .copyright{
+    padding: 10px 0;
+    text-align: center;
+  }
+
+  .copyright .bottom_links{
+    display: block;
+    float: none;
+    padding: 10px;
+  }
+
 }
