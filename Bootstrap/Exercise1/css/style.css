@@ -1,0 +1,39 @@
+.form-control + .form-control{
+  margin-top: 10px;
+}
+
+.without_border {
+  border: none;
+}
+
+.mytable > thead > tr >th {
+  vertical-align: top;
+}
+
+.panel {
+  margin-bottom: 30px;
+}
+
+.radio-inline + .radio-inline {
+  margin-left: 0;
+}
+
+select {
+  display: block;
+}
+
+.select_extended_date {
+  border-radius: 100px;
+  min-width: 90px;
+}
+
+@media (max-width: 991px){
+
+  .margin_top {
+    margin-top:10px;
+  }
+
+  select {
+    display: inline;
+  }
+}
