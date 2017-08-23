@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 
-.radio-inline + .radio-inline {
+.radio_inputs + .radio_inputs {
   margin-left: 0;
 }
 
