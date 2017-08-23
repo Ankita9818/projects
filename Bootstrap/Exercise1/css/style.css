@@ -1,4 +1,4 @@
-.form-control + .form-control{
+.address_input + .address_input{
   margin-top: 10px;
 }
 
@@ -10,7 +10,7 @@
   vertical-align: top;
 }
 
-.panel {
+.panel_with_bottom_margin {
   margin-bottom: 30px;
 }
 
@@ -18,7 +18,7 @@
   margin-left: 0;
 }
 
-select {
+.select_input {
   display: block;
 }
 
@@ -33,7 +33,7 @@ select {
     margin-top:10px;
   }
 
-  select {
+  .select_input {
     display: inline;
   }
 }
