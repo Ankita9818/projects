@@ -1,0 +1,320 @@
+.body {
+  font-family: 'Fira Mono', monospace;
+}
+
+.section1 {
+  background-image:url(../images/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: table;
+  height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+.vertically-center{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+
+.top_navbar{
+  background-color: rgba(0,0,0,0.1);
+  border:none;
+  font-size: 20px;
+  margin-top: 25px;
+}
+
+.color_white, .color_white li a{
+  color: white !important;
+}
+
+.pacifico_font{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px !important;
+}
+
+.btn-join-us{
+  background-color:transparent;
+  border-color:white;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.primary-heading {
+  font-size: 46px;
+  margin-top: 40px;
+}
+
+.play-circle {
+  color: white;
+  font-size: 90px;
+  margin-bottom: 40px;
+  margin-top:40px;
+}
+
+.btn-start {
+  background-color: rgb(217,98,96);
+  border: none;
+  font-size: 20px;
+  padding: 20px 50px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.margin-bottom-0{
+  margin-bottom: 0px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.section2{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.product-name {
+  color: #333;
+  font-weight: bold;
+  line-height: 2;
+}
+
+.productimage{
+  height: 200px;
+}
+
+.product_hoverable:hover{
+  box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
+  cursor: pointer;
+}
+
+.description-list {
+  color: red;
+  padding-left: 15px;
+}
+
+.description {
+  color: rgb(135,135,135);
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.section3 {
+  background-color: rgb(237,237,237);
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
+.description2 {
+  color: rgb(79,73,82);
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.product-column {
+  transform: translateY(25%);
+  width: 70%;
+}
+
+.padding-left-right-0 {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.reviewer-image {
+  height: 200px;
+  margin-bottom: 30px;
+  width: 200px;
+}
+
+blockquote{
+  border-left: none;
+  padding-left:50px;
+  position: relative;
+}
+
+blockquote:before {
+color: #ccc;
+content: "\201C";
+display: block;
+font-size: 120px;
+left: -20px;
+padding-left: 10px;
+position: absolute;
+top: -30px;
+}
+
+blockquote footer {
+  color: #ccc;
+  font-weight: bold;
+}
+
+.section5 {
+  background-image: url(../images/section5.jpg);
+  background-size: cover;
+  color: white;
+  padding-bottom: 70px;
+  padding-top: 70px;
+}
+
+.pricing{
+  background-color: rgb(120,196,184);
+  color: white;
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+sup {
+  top: -2.5em;
+}
+
+.font-size-90 {
+  font-size: 90px;
+}
+
+.thumbnail {
+  color: black;
+  line-height: 2;
+  padding-left: 0;
+  padding-right:0;
+  width: 90%;
+}
+
+.margin-10 {
+  margin: 10px 0;
+}
+
+.section6 {
+  background-color: rgb(217,98,96);
+  color: white;
+}
+
+.btn-start-diff-color {
+  background-color: white;
+  border: none;
+  color: rgb(217,98,96);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.section6 a{
+  color: white;
+}
+
+.section7 {
+  padding-bottom: 0;
+}
+
+.form-newsletter{
+  border: 1px solid rgb(217,98,96);
+  padding: 30px;
+}
+
+.btn-subscribe {
+  background-color: rgb(217,98,96);
+  border-left: none;
+  font-size: 16px;
+  padding: 19px 30px;
+}
+
+.footer {
+  background-color: rgb(237,237,237);
+}
+
+.circle-social {
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+}
+
+.circle-social i{
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.footer-link,.footer a {
+  color: #aaa;
+  font-size: 18px;
+}
+
+.margin-20{
+  margin-top:20px;
+}
+
+.circle-msg{
+  background-color: rgb(217,98,96);
+  border-radius: 50%;
+  bottom: 40px;
+  display: inline-block;
+  height: 60px;
+  position: fixed;
+  right:40px;
+  width: 60px;
+}
+
+.circle-msg i{
+  font-size: 30px;
+  line-height: 50px;
+}
+
+.middle-icon{
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+@media screen and (max-width: 767px) {
+
+  .navbar-fixed-top{
+    position: relative;
+  }
+
+  .vertically-center{
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .top_navbar{
+    background-color: transparent;
+  }
+
+  .section1{
+    min-height: calc(100vh - 95px);
+  }
+
+  .primary-heading {
+    font-size: 36px;
+  }
+
+  .color-pink, .color-pink li a{
+    color: rgb(217,98,96) !important;
+  }
+
+  .product-column{
+    padding: 20px;
+  }
+
+  .thumbnail{
+    min-width: 280px;
+    width: 60%;
+  }
+
+  .product-column {
+    transform: translateY(0);
+    width: 100%;
+  }
+
+  .copyright{
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+}
