@@ -3,13 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"-->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Fira+Mono:400,700|Pacifico" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Launch</title>
 </head>
 <body>
+<!--Navigation Bar -->
 <header>
   <nav class="navbar navbar-default top_navbar navbar-fixed-top">
     <div class="container">
@@ -19,30 +21,31 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand pacifico_font color_white color-pink" href="#"><i class="fa fa-rocket" aria-hidden="true"></i> launch</a>
+        <a class="navbar-brand brandname color_white color-pink" href="#"><i class="fa fa-rocket" aria-hidden="true"></i> launch</a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right color_white color-pink">
-          <li class="white-navlist"><a href="#" class="loginlink"><span class="glyphicon glyphicon-log-in"></span>&nbsp;&nbsp;Login</a></li>
-          <li class="white-navlist"><button class="btn navbar-btn btn-join-us">JOIN US</button></li>
+          <li class="white-navlist"><a href="#" class="loginlink"><span class="glyphicon glyphicon-log-in hidden-xs">&nbsp;&nbsp;</span>Login</a></li>
+          <li class="white-navlist"><button class="btn navbar-btn btn-join-us">Join Us</button></li>
         </ul>
       </div>
     </div>
   </nav>
 </header>
 
+<!--Section1 - Homepage -->
 <section class="section1">
   <div class="container text-center vertically-center">
     <h1 class="primary-heading">Startup Landing Page For Your Product</h1>
     <h3>Perfect and awesome theme to present your product or service</h3>
     <a href="#"><p class="glyphicon glyphicon-play-circle play-circle"></p></a>
     <p><button type="button" class="btn btn-danger btn-start">GET STARTED</button></p>
-    <p class="font-20">50K Worldwide Signups</p>
+    <p class="font-16">50K Worldwide Signups</p>
   </div>
 </section>
 
-<!-- Section 2 Benefits-->
-<section class="section2 container text-center">
+<!-- Section 2 Benefits Of Product-->
+<section class="section2 padding-70 container text-center">
   <h3><b>Main Benefits Of The Product</b></h3>
   <p class="font-24 margin-bottom-50">Reasons why you should choose this product</p>
   <div class="row">
@@ -67,152 +70,73 @@
   </div>
 </section>
 
-<!-- section3 -->
+<!-- section3 - Product Description-->
 <section class="section3">
-<div class="row productrow">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-push-6 padding-left-right-0">
-        <img src="images/straw.jpg" alt="coffee" class="image_right">
-      </div>
-      <div class="col-sm-6 col-sm-pull-6">
-        <div class="product-column">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
+  <div class="row productrow">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-sm-push-6">
+          <img src="images/straw.jpg" alt="coffee" class="image_right image_left">
+        </div>
+        <div class="col-sm-6 col-sm-pull-6">
+          <div class="product-column">
+            <h3>Heading of Product</h3>
+            <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="description-list">
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="row productrow margin-top-100">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 padding-left-right-0">
-        <img src="images/straw.jpg" alt="coffee" class="image_left">
-      </div>
-      <div class="col-sm-6">
-        <div class="product-column center-block">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
+  <div class="row productrow margin-top-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <img src="images/straw.jpg" alt="coffee" class="image_left">
+        </div>
+        <div class="col-sm-6">
+          <div class="product-column center-block">
+            <h3>Heading of Product</h3>
+            <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="description-list">
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+              <li><span class="description">Lorem ipsum dolor sit amet</span></li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 </section>
-<!-- AB TAK KA FIXED AT TAB TAK MOBILE PE NI CHAL RA
-<section class="section3">
-<div class="row productrow">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 col-sm-push-6 padding-left-right-0">
-        <img src="images/straw.jpg" alt="coffee" class="image_right">
-      </div>
-      <div class="col-sm-6 col-sm-pull-6">
-        <div class="product-column">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="row productrow margin-top-100">
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-6 padding-left-right-0">
-        <img src="images/straw.jpg" alt="coffee" class="image_left">
-      </div>
-      <div class="col-sm-6">
-        <div class="product-column center-block">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</section>
--->
-<!--<section class="section3">
-  <div class="container">
-    <div class="row margin-bottom-80">
-      <div class="col-sm-6 col-sm-push-6 padding-left-right-0">
-        <img src="images/product.jpg" width="100%" height="500px" class="img-responsive">
-      </div>
-      <div class="col-sm-6 col-sm-pull-6">
-        <div class="product-column">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-sm-6 padding-left-right-0">
-        <img src="images/product.jpg" width="100%" height="500px" class="img-responsive">
-      </div>
-      <div class="col-sm-6">
-        <div class="product-column center-block">
-          <h3>Heading of Product</h3>
-          <p class="description2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          <ul class="description-list">
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-            <li><span class="description">Lorem ipsum dolor sit amet</span></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>-->
-<!-- Reviews section 4 -->
-<section class="section4 section2 container text-center">
+
+<!--Section4 - Reviews -->
+<section class="section4 padding-70 container text-center">
   <h3><b>Reviews From Our Users</b></h3>
   <p class="font-24 margin-bottom-50">What our users saying about the product</p>
   <div class="row">
     <div class="col-sm-6">
-      <img src="images/user1.jpg" class="img-circle reviewer-image product_hoverable img-responsive">
-      <blockquote class="text-left">
+      <img src="images/user1.jpg" class="img-circle reviewer-image img-responsive">
+      <blockquote class="text-left blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <footer>Ashley Doe, CEO ABC organistaion</footer>
+        <footer class="bq-footer">Ashley Doe, CEO ABC organistaion</footer>
       </blockquote>
     </div>
     <div class="col-sm-6 margin-top-50">
-      <img src="images/user2.jpg" class="img-circle reviewer-image product_hoverable img-responsive">
-      <blockquote class="text-left">
+      <img src="images/user2.jpg" class="img-circle reviewer-image img-responsive">
+      <blockquote class="text-left blockquote">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-        <footer>John Doe, CEO ABC organistaion</footer>
+        <footer class="bq-footer">John Doe, CEO ABC organistaion</footer>
       </blockquote>
     </div>
   </div>
 </section>
 
-<!-- Section 5 -->
+<!-- Section 5 - Thumbnails-->
 <section class="section5 container-fluid text-center">
   <h3><b>We Provide Flexible Plans</b></h3>
   <p class="font-24 margin-bottom-50">Free Sign up. 14 days Free trial. No credit card required.</p>
@@ -246,24 +170,27 @@
   </div>
 </section>
 
-<section class="section6 section2">
+<!--Section6 - Try Launch -->
+<section class="section6 padding-70">
   <div class="container text-center">
     <h1><b>Try Launch Today</b></h1>
     <p class="font-20 margin-bottom-50">Limited signup only.Order today before the discound period ends.</p>
     <button class="btn btn-danger btn-start margin-10 btn-start-diff-color">GET STARTED</button>
-    <p>Have a question? Give us a call <a href="tel :6582144789">658-214-4789</a></p>
+    <p>Have a question? Give us a call <a href="tel :6582144789" class="color_white">658-214-4789</a></p>
   </div>
 </section>
 
-<section class="section7 section2">
+<!--Section7 - Contact us -->
+<section class="section7 padding-70">
   <div class="container text-center">
     <h3><b>CONTACT US</b></h3>
     <p class="font-20 margin-bottom-50">Have any qustions? Get in touch.</p>
   </div>
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3089387621844!2d77.15814031499552!3d28.650466982410705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02eba05d2cef%3A0x7288299d12d45440!2sVinsol!5e0!3m2!1sen!2sin!4v1504099840952" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3501.3089387621844!2d77.15814031499552!3d28.650466982410705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d02eba05d2cef%3A0x7288299d12d45440!2sVinsol!5e0!3m2!1sen!2sin!4v1504099840952" width="100%" height="450" frameborder="0" allowfullscreen></iframe>
 </section>
 
-<section class="section8 section2">
+<!--Section8 - Subscribe -->
+<section class="section8 padding-70">
   <div class="container text-center">
     <h3><b>Subscribe To Our Newsletter</b></h3>
     <p class="font-20 margin-bottom-50">Subscribe to get monthly products updates and exclusive offers</p>
@@ -280,12 +207,13 @@
   </div>
 </section>
 
-<footer class="footer section2">
+<!--Footer -->
+<footer class="footer padding-70">
   <div class="container text-center">
     <div class="row">
       <div class="col-sm-4">
-        <a href="#" target="_blank" class="footerlink">Terms Of Use</a>&nbsp;&nbsp;
-        <a href="#" target="_blank" class="footerlink">Privacy Policy</a>
+        <a href="#" target="_blank" class="footer-link">Terms Of Use</a>&nbsp;&nbsp;
+        <a href="#" target="_blank" class="footer-link">Privacy Policy</a>
       </div>
       <div class="col-sm-4 copyright">
         <span class="footer-link">&copy; 2015 Launch. All Rights Reserved.</span>
@@ -293,24 +221,29 @@
       <div class="col-sm-4">
         <div class="center-block">
           <div class="circle-social text-center">
-            <a href="#" target="_blank" class="hoverable-link"></a>
-            <i class="fa fa-twitter color_white" aria-hidden="true"></i>
+            <a href="#" target="_blank">
+              <i class="fa fa-twitter color_white icon" aria-hidden="true"></i>
+            </a>
           </div>
           <div class="circle-social text-center middle-icon">
-            <i class="fa fa-facebook color_white" aria-hidden="true"></i>
+            <a href="#" target="_blank">
+              <i class="fa fa-facebook color_white icon" aria-hidden="true"></i>
+            </a>
           </div>
-          <div class="circle-social text-center product_hoverable">
-            <i class="fa fa-youtube color_white" aria-hidden="true"></i>
+          <div class="circle-social text-center">
+            <a href="#" target="_blank">
+              <i class="fa fa-youtube color_white icon" aria-hidden="true"></i>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </div>
 </footer>
-<div class="circle-msg text-center">
-  <a href="#"><i class="fa fa-commenting-o font-24 color_white" aria-hidden="true"></i></a>
+<div class="circle-social circle-msg text-center">
+  <a href="#"><i class="fa fa-commenting-o color_white icon" aria-hidden="true"></i></a>
 </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

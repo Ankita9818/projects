@@ -4,6 +4,51 @@
   padding: 0;
 }
 
+.btn:focus{
+  outline: 5px auto white;
+}
+
+.form-control:focus{
+  border-color: rgb(238,108,101);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(238,108,101,1);
+}
+
+/*Navugation Bar */
+.top_navbar{
+  background-color: rgba(0,0,0,0.1);
+  border:none;
+  font-size: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+.navbar-default .navbar-toggle:hover {
+  background-color: white;
+  box-shadow:0 0 2px 2px rgb(217,98,96);
+}
+
+.color_white, .color_white .white-navlist .loginlink{
+  color: white !important;
+}
+
+.brandname{
+  font-family: 'Pacifico', cursive;
+  font-size: 30px !important;
+}
+
+.btn-join-us{
+  background-color:transparent;
+  border-color:white;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-join-us:hover{
+  color: rgb(230,108,101);
+}
+
+/*Section1- Homepage */
 .section1 {
   background-image:url(../images/homepage.jpg);
   background-position: center;
@@ -19,41 +64,13 @@
   vertical-align: middle;
 }
 
-.margin-bottom-50{
-  margin-bottom: 50px;
-}
-
-.top_navbar{
-  background-color: rgba(0,0,0,0.1);
-  border:none;
-  font-size: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.navbar-default .navbar-toggle:hover {
-  background-color: white;
-  box-shadow:0 0 2px 2px rgb(217,98,96);
-}
-
-.color_white, .color_white .white-navlist .loginlink{
-  color: white !important;
-}
-
-.pacifico_font{
-  font-family: 'Pacifico', cursive;
-  font-size: 30px !important;
-}
-
-.btn-join-us{
-  background-color:transparent;
-  border-color:white;
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.btn-join-us:hover{
-  color: rgb(217,98,96);
+.btn-start {
+  background-color: rgb(230,108,101);
+  border: none;
+  font-size: 14px;
+  padding: 20px 50px;
+  margin: 0;
+  width: 200px;
 }
 
 .primary-heading {
@@ -68,31 +85,7 @@
   margin-top:40px;
 }
 
-.btn-start {
-  background-color: rgb(217,98,96);
-  border: none;
-  font-size: 20px;
-  padding: 20px 50px;
-  margin: 0;
-}
-
-.font-20 {
-  font-size: 20px;
-}
-
-.margin-bottom-0{
-  margin-bottom: 0px;
-}
-
-.font-24 {
-  font-size: 24px;
-}
-
-.section2{
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
+/*Section2 - Benefits */
 .product-name {
   color: #333;
   font-weight: bold;
@@ -108,28 +101,27 @@
   box-shadow: 0 0 5px 2px rgba(0,0,0,0.5);
 }
 
-.productrow{
-/*background-image: url(../images/product.jpg);
-background-size: 50%;
-background-position: right;
-background-repeat: no-repeat;*/
-overflow: hidden;
-margin: 0;
+/*Section3 - Benefits */
+.section3 {
+  background-color: rgb(247,247,247);
+  padding-bottom: 120px;
+  padding-top: 120px;
+}
 
+.productrow{
+  margin: 0;
+  overflow: hidden;
 }
 
 .image_left{
-  width: auto;
-  height: 500px;
   float: right;
+  height: 500px;
   margin-bottom: 20px;
+  width: auto;
 }
 
 .image_right{
-  width: auto;
-  height: 500px;
   float: left;
-  margin-bottom: 20px;
 }
 
 .description-list {
@@ -143,12 +135,6 @@ margin: 0;
   margin-bottom: 30px;
 }
 
-.section3 {
-  background-color: rgb(237,237,237);
-  padding-bottom: 120px;
-  padding-top: 120px;
-}
-
 .description2 {
   color: rgb(79,73,82);
   font-size: 16px;
@@ -159,12 +145,7 @@ margin: 0;
   width: 70%;
 }
 
-.padding-left-right-0 {
-  padding-left: 0;
-  padding-right: 0;
-  overflow: visible;
-}
-
+/* Section4- Review*/
 .reviewer-image {
   display: inline;
   height: 200px;
@@ -172,28 +153,29 @@ margin: 0;
   width: 200px;
 }
 
-blockquote{
+.blockquote{
   border-left: none;
   padding-left:50px;
   position: relative;
 }
 
-blockquote:before {
-color: #ccc;
-content: "\201C";
-display: block;
-font-size: 120px;
-left: -20px;
-padding-left: 10px;
-position: absolute;
-top: -30px;
+.blockquote:before {
+  color: #ccc;
+  content: "\201C";
+  display: block;
+  font-size: 120px;
+  left: -20px;
+  padding-left: 10px;
+  position: absolute;
+  top: -30px;
 }
 
-blockquote footer {
+.blockquote .bq-footer {
   color: #ccc;
   font-weight: bold;
 }
 
+/* Seciton5 - Thumbnails */
 .section5 {
   background-image: url(../images/section5.jpg);
   background-size: cover;
@@ -226,49 +208,44 @@ blockquote footer {
   width: 90%;
 }
 
-.margin-10 {
-  margin: 10px 0;
-}
-
+/* Seciton6 - Launch */
 .section6 {
-  background-color: rgb(217,98,96);
+  background-color: rgb(230,108,101);
   color: white;
 }
 
 .btn-start-diff-color {
   background-color: white;
   border: none;
-  color: rgb(217,98,96);
+  color: rgb(230,108,101);
   font-size: 16px;
   font-weight: bold;
 }
 
-.section6 a{
-  color: white;
-}
-
-.margin-bottom-20{
-  margin-bottom: 20px;
-}
-
+/* Section7 - Contact */
 .section7 {
   padding-bottom: 0;
 }
 
+/* Section8 - Subscribe*/
+.input-group-lg>.form-newsletter, .input-group-lg>.input-group-addon, .input-group-lg>.input-group-btn>.btn-subscribe{
+  height: 60px;
+}
+
 .form-newsletter{
-  border: 1px solid rgb(217,98,96);
-  padding: 20px 10px;
+  border: 1px solid rgb(230,108,101);
+  height: 60px;
 }
 
 .btn-subscribe {
-  background-color: rgb(217,98,96);
+  background-color: rgb(230,108,101);
   border-left: none;
   font-size: 16px;
-  padding: 20px 10px;
 }
 
+/* Footer*/
 .footer {
-  background-color: rgb(237,237,237);
+  background-color: rgb(247,247,247);
 }
 
 .circle-social {
@@ -279,34 +256,9 @@ blockquote footer {
   width: 40px;
 }
 
-.circle-social i{
+.circle-social .icon{
   font-size: 24px;
   line-height: 40px;
-}
-
-.footer-link,.footer a {
-  color: #aaa;
-  font-size: 18px;
-}
-
-.margin-20{
-  margin-top:20px;
-}
-
-.circle-msg{
-  background-color: rgb(217,98,96);
-  border-radius: 50%;
-  bottom: 40px;
-  display: inline-block;
-  height: 60px;
-  position: fixed;
-  right:40px;
-  width: 60px;
-}
-
-.circle-msg i{
-  font-size: 30px;
-  line-height: 50px;
 }
 
 .middle-icon{
@@ -322,63 +274,125 @@ blockquote footer {
   left: 0;
 }
 
-.margin-top-100 {
-  margin-top: 100px;
-}
-
-input:-moz-placeholder {           /* Firefox 18- */
-   color: #aaa;
-   font-size: 18px;
-}
-
-input::-moz-placeholder {          /* Firefox 19+ */
+.footer-link{
   color: #aaa;
   font-size: 18px;
 }
 
+.footer-link:hover{
+  color: rgb(238,108,101);
+  text-decoration: none;
+}
+
+.circle-social:hover{
+  box-shadow: 0 0 5px 2px rgba(238,108,101,0.9);
+}
+
+.circle-msg{
+  background-color: rgb(230,108,101);
+  border-radius: 50%;
+  bottom: 40px;
+  display: inline-block;
+  height: 50px;
+  position: fixed;
+  right:40px;
+  width: 50px;
+}
+
+.circle-msg .icon{
+  font-size: 28px;
+  line-height: 48px;
+}
+
+
+.font-16{
+  font-size: 16px;
+}
+
+.font-20 {
+  font-size: 20px;
+}
+
+.margin-bottom-50{
+  margin-bottom: 50px;
+}
+
+.margin-bottom-0{
+  margin-bottom: 0px;
+}
+
+.font-24 {
+  font-size: 24px;
+}
+
+.padding-70{
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.margin-10 {
+  margin: 10px 0;
+}
+
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.margin-20{
+  margin-top:20px;
+}
+
+.margin-top-100 {
+  margin-top: 100px;
+}
+
+
+/* Media Query For Mobile View */
 @media screen and (max-width: 767px) {
 
+  /* Navigation */
   .navbar-fixed-top{
     position: relative;
   }
 
+  .top_navbar{
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+
+  .color-pink, .color-pink .white-navlist .loginlink{
+    color: rgb(230,108,101) !important;
+  }
+  /* Section1 */
   .vertically-center{
     padding-left: 50px;
     padding-right: 50px;
   }
 
-  .top_navbar{
-    background-color: transparent;
-  }
-
   .section1{
-    max-height: calc(100vh - 95px);
+    height: calc(100vh - 70px);
   }
 
-  .btn-start {
-    padding: 20px;
-  }
   .primary-heading {
-    font-size: 28px;
+    font-size: 30px;
+    font-weight: bold;
   }
 
-  .color-pink, .color-pink .white-navlist .loginlink{
-    color: rgb(217,98,96) !important;
+  .btn-join-us {
+    font-weight: normal;
+    text-transform: initial;
   }
 
   .product-column{
-    padding: 20px;
     margin-top: 40px;
+    padding: 20px;
+    transform: translateY(0);
+    width: 100%;
   }
 
   .thumbnail{
     min-width: 280px;
     width: 60%;
-  }
-
-  .product-column {
-    transform: translateY(0);
-    width: 100%;
   }
 
   .copyright{
@@ -392,6 +406,5 @@ input::-moz-placeholder {          /* Firefox 19+ */
 
   .btn-subscribe {
     font-size: 12px;
-    padding: 21px 10px;
   }
 }
