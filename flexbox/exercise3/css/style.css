@@ -1,4 +1,5 @@
 body {
+  background-attachment: fixed;
   background-image: url('../images/banner.jpg');
   font: 14px tahoma;
   margin: 0;
@@ -162,9 +163,9 @@ input[type=checkbox]{
 /* Content Area*/
 .content-area {
   background-color: rgb(255,255,255);
-  display: -webkit-flex;
+  /*display: -webkit-flex;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;*/
 }
 
 /*Header- Space around*/
@@ -188,11 +189,6 @@ input[type=checkbox]{
 }
 
 .content-space-between {
-   align-content: space-around;
-  display: -webkit-flex;
-  display: flex;
-  flex-flow: row wrap;
-  flex:1 100%;
   justify-content: space-between;
 }
 
