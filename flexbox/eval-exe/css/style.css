@@ -163,7 +163,7 @@ body {
   margin-top: 0;
 }
 
-.image-content div{
+.image-content > div{
   display: flex;
   align-items: center;
 }
