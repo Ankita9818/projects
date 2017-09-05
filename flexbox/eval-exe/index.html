@@ -6,19 +6,27 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Toggle Views- Flex</title>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $(".clickto_toggle_class").click(function(){
+        $(".add_class_here").toggleClass("list-view");
+      });
+    });
+  </script>
 </head>
 <body>
   <div class="outer-container">
-    <div class="toggle-header round-corners gradient-black">
-      <a href="#" class="toggle-links">List</a>
-      <a href="#" class="toggle-links">Maps</a>
+    <div class="toggle-header round-corners gradient-black add_class_here">
+      <a href="#" class="toggle-links clickto_toggle_class">List</a>
+      <a href="#" class="toggle-links clickto_toggle_class">Maps</a>
     </div>
     <!-- header ends -->
     <!-- tabular view begins -->
-    <div class="tabular-list">          <!-- ADD maps CLASS HERE ALONG WITH tabular-list CLASS FOR MAP VIEW -->
+    <div class="grid-view add_class_here">          <!-- ADD list-view CLASS HERE ALONG WITH tabular-list CLASS FOR MAP VIEW -->
        <!-- Image of Map (Only for Map view)-->
-      <div class="map-img round-corners">
-        <img src="images/map-img.png" alt="Map"> <!-- Image of Map -->
+      <div class="map-img">
+        <img src="images/map-img.png" alt="Map" class="round-corners"> <!-- Image of Map -->
       </div>
 
       <!-- Headers of tabular list -->
@@ -88,8 +96,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -136,15 +144,15 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
           <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -191,8 +199,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -239,15 +247,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
-            </div>
-          </div>
-          <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
-            <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -294,8 +295,15 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
+            </div>
+          </div>
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -342,15 +350,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
-            </div>
-          </div>
-          <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
-            <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -397,8 +398,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -445,15 +446,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
-            </div>
-          </div>
-          <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
-            <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -500,8 +494,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -548,15 +542,15 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
           <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -603,8 +597,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -651,15 +645,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
-            </div>
-          </div>
-          <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
-            <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -706,8 +693,15 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
+            </div>
+          </div>
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -754,15 +748,8 @@
           <div class="image-content">
             <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
             <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
-            </div>
-          </div>
-          <div class="image-content">
-            <p><span class="purple">Move in</span> on 11/30/12</p>
-            <div>
-            <img src="images/human-img.png" alt="company" class="bag-icon" />
-            Justin Belmont
+            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+            <div>Justin Belmont</div>
             </div>
           </div>
         </div>

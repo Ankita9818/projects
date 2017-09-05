@@ -12,13 +12,14 @@ body {
 
 .toggle-header {
   background-color: black;
-  margin: 0 10px;
+  margin: 10px 10px 0 10px;
+  padding: 10px;
 }
 
 .toggle-links {
   color: white;
   display: inline-block;
-  padding: 10px;
+  padding: 5px 10px;
   text-decoration: none;
 }
 
@@ -34,7 +35,7 @@ body {
   background: linear-gradient(rgb(92,92,92), rgb(53,53,53));
 }
 
-.tabular-list {
+.grid-view {
   background-color: rgb(255,255,255);
   border: 1px solid rgb(155,155,155);
   display: table;
@@ -46,7 +47,7 @@ body {
   display: table-row;
 }
 
-.tabular-list .cell {
+.grid-view .cell {
   display: table-cell;
   border-bottom: 1px solid rgb(155,155,155);
   border-right: 1px solid rgb(155,155,155);
@@ -54,11 +55,11 @@ body {
   vertical-align: middle;
 }
 
-.tabular-list .column-cell:after {
+.grid-view .column-cell:after {
   content:attr(data-value);
 }
 
-.tabular-list .header-cell:before {
+.grid-view .header-cell:before {
   content: attr(data-header);
   color: white;
   font-weight: 700;
@@ -69,15 +70,16 @@ body {
   padding-right: 10px;
 }
 
-.tabular-list.maps {
+.grid-view.list-view {
   background-color: transparent;
   border: none;
   display: flex;
   display: -webkit-flex;
   flex-flow: row wrap;
+  justify-content: center;
 }
 
-.tabular-list.maps .rows {
+.grid-view.list-view .rows {
   background: rgb(239,239,239); /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(rgb(239,239,239), rgb(216,216,216)); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(rgb(239,239,239), rgb(216,216,216)); /* For Opera 11.1 to 12.0 */
@@ -92,7 +94,7 @@ body {
   width: 180px;
 }
 
-.maps .rows:nth-child(3n+3) {
+.list-view .rows:nth-child(3n+3) {
   background: thistle; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(thistle, orchid); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(thistle, orchid); /* For Opera 11.1 to 12.0 */
@@ -100,7 +102,7 @@ body {
   background: linear-gradient(thistle, orchid);
 }
 
-.maps .rows:nth-child(3n+4) {
+.list-view .rows:nth-child(3n+4) {
   background: gold; /* For browsers that do not support gradients */
   background: -webkit-linear-gradient(gold, lemonchiffon); /* For Safari 5.1 to 6.0 */
   background: -o-linear-gradient(gold, lemonchiffon); /* For Opera 11.1 to 12.0 */
@@ -108,22 +110,22 @@ body {
   background: linear-gradient(gold, lemonchiffon);
 }
 
-.tabular-list.maps .rows:hover {
+.grid-view.list-view .rows:hover {
   transform: scale(1.05);
 }
 
-.maps .list-header{
+.list-view .list-header{
   display: none;
 }
 
-.tabular-list.maps .cell {
+.grid-view.list-view .cell {
   border: none;
   display: block;
   font-size: 12px;
   padding: 0;
 }
 
-.maps .column-cell[data-header$="Fee"]:before {
+.list-view .column-cell[data-header$="Fee"]:before {
   content: attr(data-header) ": ";
 }
 
@@ -131,7 +133,7 @@ body {
   color: rgb(85,82,157);
 }
 
-.maps .column-cell[data-header="Office"] {
+.list-view .column-cell[data-header="Office"] {
   font-size: 16px;
 }
 
@@ -139,10 +141,9 @@ body {
   display: none;
 }
 
-.tabular-list.maps .map-img {
-  background-color: white;
+.grid-view.list-view .map-img {
   display: block;
-  flex: 1 100%;
+  flex-basis: 100%;
   margin: 10px auto;
 }
 
@@ -171,13 +172,23 @@ body {
   padding-bottom: 10px;
 }
 
-.maps .image-content:not(:first-child) {
+.list-view .image-content:not(:first-child) {
   border-top:1px dashed rgb(155,155,155);
 }
 
-.tabular-list.maps .column-cell[data-header="Building"],.tabular-list.maps .column-cell[data-header="User"] ,
- .tabular-list.maps .column-cell[data-header="Placement"] , .tabular-list.maps .column-cell[data-header="Floor"],
- .tabular-list.maps .column-cell[data-header="Company"], .tabular-list.maps .column-cell[data-header="Licence"]{
+.grid-view.list-view .column-cell[data-header="Building"],.grid-view.list-view .column-cell[data-header="User"] ,
+.grid-view.list-view .column-cell[data-header="Placement"] , .grid-view.list-view .column-cell[data-header="Floor"],
+.grid-view.list-view .column-cell[data-header="Company"], .grid-view.list-view .column-cell[data-header="Licence"]{
   display: none;
 }
 
+.list-view .toggle-links:last-child ,.toggle-links:first-child{
+  background-color: white;
+  border-radius: 5px;
+  color:black;
+}
+
+.list-view .toggle-links:first-child {
+  background-color: transparent;
+  color:white;
+}
