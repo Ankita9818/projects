@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>hi</title>
+  <style type="text/css">
+    article::before {
+  content: attr(data-index-number);
+}
+
+.test:after {
+  content: attr(data-content);
+}
+  </style>
+</head>
+<body>
+  <article
+  id="electriccars"
+  data-columns="3"
+  data-index-number="12314"
+  data-parent="cars">
+hello
+</article>
+
+<div class="test" data-content="This is the div content"></div>​
+</body>
+</html>

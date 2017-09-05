@@ -1,0 +1,183 @@
+body {
+  background-color: rgb(197,197,197);
+  color: rgb(82,82,82);
+  font:14px 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.toggle-header {
+  background-color: black;
+  margin: 0 10px;
+}
+
+.toggle-links {
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+.round-corners {
+  border-radius: 10px;
+}
+
+.gradient-black {
+  background: white; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(92,92,92), rgb(53,53,53)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(92,92,92), rgb(53,53,53)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(92,92,92), rgb(53,53,53)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(92,92,92), rgb(53,53,53));
+}
+
+.tabular-list {
+  background-color: rgb(255,255,255);
+  border: 1px solid rgb(155,155,155);
+  display: table;
+  margin:10px;
+  width: calc(100% - 20px);
+}
+
+.rows,.list-header {
+  display: table-row;
+}
+
+.tabular-list .cell {
+  display: table-cell;
+  border-bottom: 1px solid rgb(155,155,155);
+  border-right: 1px solid rgb(155,155,155);
+  padding: 10px;
+  vertical-align: middle;
+}
+
+.tabular-list .column-cell:after {
+  content:attr(data-value);
+}
+
+.tabular-list .header-cell:before {
+  content: attr(data-header);
+  color: white;
+  font-weight: 700;
+}
+
+.bag-icon {
+  max-width: 55px;
+  padding-right: 10px;
+}
+
+.tabular-list.maps {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+}
+
+.tabular-list.maps .rows {
+  background: rgb(239,239,239); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgb(239,239,239), rgb(216,216,216)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgb(239,239,239), rgb(216,216,216)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgb(239,239,239), rgb(216,216,216)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgb(239,239,239), rgb(216,216,216));
+  border:1px solid rgb(190,190,190);
+  display: block;
+  margin: 10px;
+  min-height:315px;
+  padding: 10px;
+  transition: transform 0.5s;
+  width: 180px;
+}
+
+.maps .rows:nth-child(3n+3) {
+  background: thistle; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(thistle, orchid); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(thistle, orchid); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(thistle, orchid); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(thistle, orchid);
+}
+
+.maps .rows:nth-child(3n+4) {
+  background: gold; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(gold, lemonchiffon); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(gold, lemonchiffon); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(gold, lemonchiffon); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(gold, lemonchiffon);
+}
+
+.tabular-list.maps .rows:hover {
+  transform: scale(1.05);
+}
+
+.maps .list-header{
+  display: none;
+}
+
+.tabular-list.maps .cell {
+  border: none;
+  display: block;
+  font-size: 12px;
+  padding: 0;
+}
+
+.maps .column-cell[data-header$="Fee"]:before {
+  content: attr(data-header) ": ";
+}
+
+.column-cell[data-header="Office"], .column-cell[data-header="Company"],.image-content div,.purple{
+  color: rgb(85,82,157);
+}
+
+.maps .column-cell[data-header="Office"] {
+  font-size: 16px;
+}
+
+.map-img {
+  display: none;
+}
+
+.tabular-list.maps .map-img {
+  background-color: white;
+  display: block;
+  flex: 1 100%;
+  margin: 10px auto;
+}
+
+.map-img img {
+  width: 100%;
+}
+
+.image-content {
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+}
+
+.image-content p {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.image-content div{
+  display: flex;
+  align-items: center;
+}
+
+.image-content:first-child:not(:only-child) {
+  padding-bottom: 10px;
+}
+
+.maps .image-content:not(:first-child) {
+  border-top:1px dashed rgb(155,155,155);
+}
+
+.tabular-list.maps .column-cell[data-header="Building"],.tabular-list.maps .column-cell[data-header="User"] ,
+ .tabular-list.maps .column-cell[data-header="Placement"] , .tabular-list.maps .column-cell[data-header="Floor"],
+ .tabular-list.maps .column-cell[data-header="Company"], .tabular-list.maps .column-cell[data-header="Licence"]{
+  display: none;
+}
+

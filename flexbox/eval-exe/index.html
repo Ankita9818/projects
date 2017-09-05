@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <title>Toggle Views- Flex</title>
+</head>
+<body>
+  <div class="outer-container">
+    <div class="toggle-header round-corners gradient-black">
+      <a href="#" class="toggle-links">List</a>
+      <a href="#" class="toggle-links">Maps</a>
+    </div>
+    <!-- header ends -->
+    <!-- tabular view begins -->
+    <div class="tabular-list">          <!-- ADD maps CLASS HERE ALONG WITH tabular-list CLASS FOR MAP VIEW -->
+       <!-- Image of Map (Only for Map view)-->
+      <div class="map-img round-corners">
+        <img src="images/map-img.png" alt="Map"> <!-- Image of Map -->
+      </div>
+
+      <!-- Headers of tabular list -->
+      <div class="list-header gradient-black">
+        <div class="cell header-cell" data-header="Building">
+        </div>
+        <div class="cell header-cell" data-header="Office">
+        </div>
+        <div class="cell header-cell" data-header="Type">
+        </div>
+        <div class="cell header-cell" data-header="User">
+        </div>
+        <div class="cell header-cell" data-header="Placement">
+        </div>
+        <div class="cell header-cell" data-header="Floor">
+        </div>
+        <div class="cell header-cell" data-header="Licence">
+        </div>
+        <div class="cell header-cell" data-header="Company">
+        </div>
+        <div class="cell header-cell" data-header="Target Fee">
+        </div>
+        <div class="cell header-cell" data-header="Actual Fee">
+        </div>
+        <div class="cell header-cell" data-header="Occup.">
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row -->
+      <div class="rows">
+        <div class="cell column-cell" data-header="Building">
+          NYC - Soco
+        </div>
+        <div class="cell column-cell" data-header="Office">
+          V0 9
+        </div>
+        <div class="cell column-cell" data-header="Type">
+          Virtual Office
+        </div>
+        <div class="cell column-cell" data-header="User">
+          1
+        </div>
+        <div class="cell column-cell" data-header="Placement">
+          Interior
+        </div>
+        <div class="cell column-cell" data-header="Floor">
+          1st Floor
+        </div>
+        <div class="cell column-cell" data-header="Licence">
+          Justin Belmont
+        </div>
+        <div class="cell column-cell" data-header="Company">
+          <div class="image-content">
+            <div>
+              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
+              APC Online Inc.
+            </div>
+          </div>
+        </div>
+        <div class="cell column-cell" data-header="Target Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Actual Fee">
+          $99.00
+        </div>
+        <div class="cell column-cell" data-header="Occup.">
+          <div class="image-content">
+            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+          <div class="image-content">
+            <p><span class="purple">Move in</span> on 11/30/12</p>
+            <div>
+            <img src="images/human-img.png" alt="company" class="bag-icon" />
+            Justin Belmont
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
