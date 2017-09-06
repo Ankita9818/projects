@@ -6,14 +6,6 @@
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Toggle Views- Flex</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script>
-    $( document ).ready(function() {
-      $(".clickto_toggle_class").click(function(){
-        $(".add_class_here").toggleClass("list-view");
-      });
-    });
-  </script>
 </head>
 <body>
   <div class="toggle-header round-corners gradient-black add_class_here">
@@ -654,5 +646,14 @@
       </div>
     </div>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script>
+    $( document ).ready(function() {
+      $(".clickto_toggle_class").click(function(){
+        $(".add_class_here").toggleClass("list-view");
+      });
+    });
+  </script>
 </body>
 </html>
