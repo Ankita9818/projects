@@ -127,6 +127,7 @@ body {
 
 .list-view .column-cell[data-header$="Fee"]:before {
   content: attr(data-header) ": ";
+  font-size: 12px;
 }
 
 .column-cell[data-header="Office"], .column-cell[data-header="Company"],.image-content div,.purple{
