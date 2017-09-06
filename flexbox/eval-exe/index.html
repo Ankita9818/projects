@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet" type="text/css">
   <title>Toggle Views- Flex</title>
@@ -16,17 +16,18 @@
   </script>
 </head>
 <body>
+  <div class="toggle-header round-corners gradient-black add_class_here">
+    <a href="#" class="toggle-links clickto_toggle_class">List</a>
+    <a href="#" class="toggle-links clickto_toggle_class">Maps</a>
+  </div>
+<!-- header ends -->
+
+<!-- tabular view begins -->
   <div class="outer-container">
-    <div class="toggle-header round-corners gradient-black add_class_here">
-      <a href="#" class="toggle-links clickto_toggle_class">List</a>
-      <a href="#" class="toggle-links clickto_toggle_class">Maps</a>
-    </div>
-    <!-- header ends -->
-    <!-- tabular view begins -->
     <div class="grid-view add_class_here">          <!-- ADD list-view CLASS HERE ALONG WITH tabular-list CLASS FOR MAP VIEW -->
-       <!-- Image of Map (Only for Map view)-->
+      <!-- Image of Map (Only for Map view)-->
       <div class="map-img">
-        <img src="images/map-img.png" alt="Map" class="round-corners"> <!-- Image of Map -->
+        <img src="images/map-img.png" alt="Map" class="round-corners image"> <!-- Image of Map -->
       </div>
 
       <!-- Headers of tabular list -->
@@ -57,7 +58,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -66,21 +67,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -94,10 +95,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -105,7 +106,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -114,21 +115,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -142,17 +143,17 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -160,7 +161,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -169,21 +170,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -197,10 +198,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -208,7 +209,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -217,21 +218,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -245,10 +246,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -256,7 +257,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -265,21 +266,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -293,17 +294,17 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -311,7 +312,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -320,21 +321,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -348,10 +349,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -359,7 +360,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -368,21 +369,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -396,10 +397,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -407,7 +408,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -416,21 +417,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -444,10 +445,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -455,7 +456,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -464,21 +465,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -492,10 +493,17 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
+            </div>
+          </div>
+          <div class="image-content">
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -503,7 +511,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -512,21 +520,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -540,17 +548,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
-            </div>
-          </div>
-          <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -558,7 +559,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -567,21 +568,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -595,10 +596,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>
@@ -606,7 +607,7 @@
 
       <!-- Row -->
       <div class="rows">
-        <div class="cell column-cell" data-header="Building">
+        <div class="cell column-cell hidden-listview" data-header="Building">
           NYC - Soco
         </div>
         <div class="cell column-cell" data-header="Office">
@@ -615,21 +616,21 @@
         <div class="cell column-cell" data-header="Type">
           Virtual Office
         </div>
-        <div class="cell column-cell" data-header="User">
+        <div class="cell column-cell hidden-listview" data-header="User">
           1
         </div>
-        <div class="cell column-cell" data-header="Placement">
+        <div class="cell column-cell hidden-listview" data-header="Placement">
           Interior
         </div>
-        <div class="cell column-cell" data-header="Floor">
+        <div class="cell column-cell hidden-listview" data-header="Floor">
           1st Floor
         </div>
-        <div class="cell column-cell" data-header="Licence">
+        <div class="cell column-cell hidden-listview" data-header="Licence">
           Justin Belmont
         </div>
-        <div class="cell column-cell" data-header="Company">
+        <div class="cell column-cell hidden-listview" data-header="Company">
           <div class="image-content">
-            <div>
+            <div class="block-flexchild">
               <img src="images/bag-icon.png" alt="company" class="bag-icon" />
               APC Online Inc.
             </div>
@@ -643,113 +644,10 @@
         </div>
         <div class="cell column-cell" data-header="Occup.">
           <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row -->
-      <div class="rows">
-        <div class="cell column-cell" data-header="Building">
-          NYC - Soco
-        </div>
-        <div class="cell column-cell" data-header="Office">
-          V0 9
-        </div>
-        <div class="cell column-cell" data-header="Type">
-          Virtual Office
-        </div>
-        <div class="cell column-cell" data-header="User">
-          1
-        </div>
-        <div class="cell column-cell" data-header="Placement">
-          Interior
-        </div>
-        <div class="cell column-cell" data-header="Floor">
-          1st Floor
-        </div>
-        <div class="cell column-cell" data-header="Licence">
-          Justin Belmont
-        </div>
-        <div class="cell column-cell" data-header="Company">
-          <div class="image-content">
-            <div>
-              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
-              APC Online Inc.
-            </div>
-          </div>
-        </div>
-        <div class="cell column-cell" data-header="Target Fee">
-          $99.00
-        </div>
-        <div class="cell column-cell" data-header="Actual Fee">
-          $99.00
-        </div>
-        <div class="cell column-cell" data-header="Occup.">
-          <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
-            </div>
-          </div>
-          <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row -->
-      <div class="rows">
-        <div class="cell column-cell" data-header="Building">
-          NYC - Soco
-        </div>
-        <div class="cell column-cell" data-header="Office">
-          V0 9
-        </div>
-        <div class="cell column-cell" data-header="Type">
-          Virtual Office
-        </div>
-        <div class="cell column-cell" data-header="User">
-          1
-        </div>
-        <div class="cell column-cell" data-header="Placement">
-          Interior
-        </div>
-        <div class="cell column-cell" data-header="Floor">
-          1st Floor
-        </div>
-        <div class="cell column-cell" data-header="Licence">
-          Justin Belmont
-        </div>
-        <div class="cell column-cell" data-header="Company">
-          <div class="image-content">
-            <div>
-              <img src="images/bag-icon.png" alt="company" class="bag-icon" />
-              APC Online Inc.
-            </div>
-          </div>
-        </div>
-        <div class="cell column-cell" data-header="Target Fee">
-          $99.00
-        </div>
-        <div class="cell column-cell" data-header="Actual Fee">
-          $99.00
-        </div>
-        <div class="cell column-cell" data-header="Occup.">
-          <div class="image-content">
-            <p>Occupied | <span class="purple">Move out</span> on 11/30/12</p>
-            <div>
-            <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
-            <div>Justin Belmont</div>
+            <p class="margin-0">Occupied | <span class="purple">Move out</span> on 11/30/12</p>
+            <div class="block-flexchild">
+              <div><img src="images/human-img.png" alt="company" class="bag-icon" /></div>
+              <div>Justin Belmont</div>
             </div>
           </div>
         </div>

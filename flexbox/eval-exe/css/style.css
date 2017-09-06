@@ -35,6 +35,10 @@ body {
   background: linear-gradient(rgb(92,92,92), rgb(53,53,53));
 }
 
+.outer-container {
+  overflow-x: auto;
+}
+
 .grid-view {
   background-color: rgb(255,255,255);
   border: 1px solid rgb(155,155,155);
@@ -114,10 +118,6 @@ body {
   transform: scale(1.05);
 }
 
-.list-view .list-header{
-  display: none;
-}
-
 .grid-view.list-view .cell {
   border: none;
   display: block;
@@ -137,17 +137,13 @@ body {
   font-size: 16px;
 }
 
-.map-img {
-  display: none;
-}
-
 .grid-view.list-view .map-img {
   display: block;
   flex-basis: 100%;
   margin: 10px auto;
 }
 
-.map-img img {
+.map-img .image {
   width: 100%;
 }
 
@@ -158,12 +154,12 @@ body {
   justify-content: flex-start;
 }
 
-.image-content p {
+.image-content .margin-0 {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-.image-content > div{
+.image-content > .block-flexchild{
   display: flex;
   align-items: center;
 }
@@ -177,9 +173,7 @@ body {
   margin-bottom: 10px;
 }
 
-.grid-view.list-view .column-cell[data-header="Building"],.grid-view.list-view .column-cell[data-header="User"] ,
-.grid-view.list-view .column-cell[data-header="Placement"] , .grid-view.list-view .column-cell[data-header="Floor"],
-.grid-view.list-view .column-cell[data-header="Company"], .grid-view.list-view .column-cell[data-header="Licence"]{
+.grid-view.list-view .hidden-listview, .map-img, .list-view .list-header{
   display: none;
 }
 
@@ -192,4 +186,17 @@ body {
 .list-view .toggle-links:first-child {
   background-color: transparent;
   color:white;
+}
+
+
+/* For mobile Devices */
+@media screen and (max-width: 420px){
+  .grid-view.list-view .rows {
+    text-align: center;
+    width: 100%;
+  }
+
+  .grid-view.list-view .image-content {
+    align-items: center;
+  }
 }
