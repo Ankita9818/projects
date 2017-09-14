@@ -216,7 +216,9 @@ body {
 }
 
 .links:not(:last-child)::after {
+  color: #dce3e5;
   content: "|";
+  font-size: 16px;
   margin-left: 15px;
   margin-right: 15px;
 }
