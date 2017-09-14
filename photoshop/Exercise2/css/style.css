@@ -151,9 +151,14 @@ body {
 }
 
 .orange {
+  color: #ff6600;
   font-size: 18px;
   font-weight: bold;
-  color: #ff6600;
+  text-decoration: none;
+}
+
+.orange:hover {
+  text-decoration: underline;
 }
 
 .description {
@@ -166,6 +171,10 @@ body {
   background-color: white;
   border-radius: 50%;
   max-width: 268px;
+}
+
+.circle:hover {
+  box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
 }
 
 .section2 .lists:nth-child(even) .circle {
