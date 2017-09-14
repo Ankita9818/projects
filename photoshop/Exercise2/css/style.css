@@ -230,6 +230,7 @@ body {
   color: #ff6600;
 }
 
+/*Media query for mobile screens */
 @media (max-width: 767px) {
 
   .header .container {
