@@ -162,34 +162,6 @@ body {
   font-size: 18px;
 }
 
-.section3 {
-  background-color: #0e61a2; /* For browsers that do not support gradients */
-  background-image: url('../images/card.png');
-  background-position:center bottom;
-  background-repeat: no-repeat;
-  background-size:contain;
-  color: white;
-  height: 450px;
-  position: relative;
-  text-align: center;
-}
-
-.section3 .container {
-  bottom: 60px;
-  left: 50%;
-  position: absolute;
-  transform: translateX(-50%);
-}
-
-.section3 .heading {
-  margin-bottom: 10px;
-}
-
-.section3 .description {
-  color: white;
-  margin-bottom: 30px;
-}
-
 .circle {
   background-color: white;
   border-radius: 50%;
@@ -198,6 +170,33 @@ body {
 
 .section2 .lists:nth-child(even) .circle {
   background-color: #ebeff0;
+}
+
+.section3 {
+  background-color: #0e61a2; /* For browsers that do not support gradients */
+  background-image: url('../images/card.png');
+  background-position:center bottom;
+  background-repeat: no-repeat;
+  background-size:contain;
+  color: white;
+  min-height: 450px;
+  padding: 50px 0 45px 0;
+  position: relative;
+  text-align: center;
+}
+
+.section3 .container {
+  height: 100%;
+}
+
+.section3 .heading {
+  margin-bottom: 10px;
+  margin-top: 200px;
+}
+
+.section3 .description {
+  color: white;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -228,6 +227,13 @@ body {
     flex-direction: column;
   }
 
+  .nav {
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    padding-top: 10px;
+    width: 100%;
+  }
+
   .section1 {
     background-color: #0e61a2; /* For browsers that do not support gradients */
     background-image:  url('../images/transparent-ellipse.png');
@@ -239,15 +245,15 @@ body {
   .section2 .container{
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 30px;
     padding-bottom: 30px;
+    padding-top: 30px;
   }
 
   .section2 .container.col-rev {
     flex-direction: column-reverse;
   }
 
-  .details,.container {
+  .details, .container {
     text-align: center;
     width: 100%;
   }
@@ -258,15 +264,6 @@ body {
 
   .section3 {
     background-size: cover;
-  }
-
- .section3 .container {
-    left: 0;
-    transform: translateX(0);
-  }
-
-  .section3 .container .heading {
-    text-shadow: 0px 0px 5px #ff6600;
   }
 
   .links {
